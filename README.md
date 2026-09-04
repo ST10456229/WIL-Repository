@@ -121,7 +121,17 @@ https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe
 <br> <b>Supplier Details</b> </td> </tr> <td align="center"> <img width="480" height="672" alt="image" src="https://github.com/user-attachments/assets/a726a69f-0556-4348-9937-f2e76189f5bc" />
 </table> </div>
 📱 Mobile App Wireframes
-<div align="center"> <table> <tr> <td align="center"> <img src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" alt="First Screen" width="120"/><br> <b>First Screen</b> </td> <td align="center"> <img src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" alt="Dashboard" width="120"/><br> <b>App Dashboard</b> </td> <td align="center"> <img src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" alt="Food Info" width="120"/><br> <b>Food Information</b> </td> </tr> <tr> <td align="center"> <img src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" alt="Customization" width="120"/><br> <b>Item Customization</b> </td> <td align="center"> <img src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" alt="Cart" width="120"/><br> <b>Cart</b> </td> <td align="center"> <img src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" alt="Checkout" width="120"/><br> <b>Checkout</b> </td> </tr> <tr> <td align="center"> <img src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" alt="Confirmation" width="120"/><br> <b>Confirmation</b> </td> <td align="center"> <img src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" alt="Tracking" width="120"/><br> <b>Order Tracking</b> </td> <td align="center"> <img src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" alt="Settings" width="120"/><br> <b>Settings</b> </td> </tr> </table> </div>
+<div align="center"> <table> <tr> <td align="center"> <img width="240" height="546" alt="image" src="https://github.com/user-attachments/assets/3fba39bd-8db0-4bcd-834a-1b9a70bcc9f2" />
+<br> <b>Onboarding/b> </td> <td align="center"> <img width="181" height="614" alt="image" src="https://github.com/user-attachments/assets/84377ffc-f157-43a7-8142-f5cace859e87" />
+<br> <b>App Dashboard</b> </td> <td align="center"> <img width="217" height="921" alt="image" src="https://github.com/user-attachments/assets/464d1598-23b6-4d20-8b24-91e59b1bcccf" />
+<br> <b>Food Information</b> </td> </tr> <tr> <td align="center"><img width="275" height="896" alt="image" src="https://github.com/user-attachments/assets/ec8744c1-f5ff-40b6-8493-60c798ddb398" />
+<br> <b>Item Customization</b> </td> <td align="center"> <img width="174" height="530" alt="image" src="https://github.com/user-attachments/assets/f5e8d2f1-26ec-4f81-96b9-4a48074f7256" />
+<br> <b>Cart</b> </td> <td align="center"> <img width="216" height="731" alt="image" src="https://github.com/user-attachments/assets/c6280bc5-1876-4a7f-bf73-9e4dded7b8e6" />
+<br> <b>Checkout</b> </td> </tr> <tr> <td align="center"> <img width="290" height="847" alt="image" src="https://github.com/user-attachments/assets/f57d8a8c-28bb-414b-b612-94364e5bbbd5" />
+<br> <b>Confirmation</b> </td> <td align="center"> <img width="243" height="769" alt="image" src="https://github.com/user-attachments/assets/f192b80e-54dd-4e10-a623-1493d118e251" />
+<br> <b>Order Tracking</b> </td> <td align="center"><img width="184" height="703" alt="image" src="https://github.com/user-attachments/assets/5706bd78-dcd7-4056-859d-bd01ee32bd7c" />
+<br> <b>Settings</b> </td> <td align="center"> ![Uploading image.png…]()
+</tr> </table> </div>
 Design Tool
 All wireframes were created using Figma and Draw.io.
 
