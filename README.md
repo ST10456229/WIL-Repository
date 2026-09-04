@@ -300,7 +300,7 @@ Run on emulator or physical device
 
 ---
    
-##🤝 Contributing
+## 🤝 Contributing
 
 Fork the repository
 
