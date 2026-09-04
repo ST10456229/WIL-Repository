@@ -1,191 +1,271 @@
-ChowDown Café - Digital Marketing & Operations Platform
-<img width="282" height="179" alt="chowd" src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" />
-https://img.shields.io/badge/version-1.0.0-blue
-https://img.shields.io/badge/PHP-8.x-777BB4?logo=php
-https://img.shields.io/badge/Kotlin-1.9.x-7F52FF?logo=kotlin
-https://img.shields.io/badge/MySQL-8.x-4479A1?logo=mysql
-https://img.shields.io/badge/Firebase-Firestore-FFCA28?logo=firebase
-https://img.shields.io/badge/DevOps-GitHub%2520Actions-2088FF?logo=github-actions
-https://img.shields.io/badge/Docker-Containerized-2496ED?logo=docker
+ChowDown Café — Digital Marketing & Operations Platform
+
+<p align="center"> <img src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" alt="ChowDown Café" width="500"> </p>
+
+<p align="center"> A unified digital platform for <strong>ChowDown Café</strong> combining business management, digital marketing, inventory management, customer ordering, and mobile engagement. </p>
+
+<p align="center"> <img src="https://img.shields.io/badge/version-1.0.0-blue" alt="Version"> <img src="https://img.shields.io/badge/PHP-8.x-777BB4?logo=php" alt="PHP"> <img src="https://img.shields.io/badge/Kotlin-1.9.x-7F52FF?logo=kotlin" alt="Kotlin"> <img src="https://img.shields.io/badge/MySQL-8.x-4479A1?logo=mysql" alt="MySQL"> <img src="https://img.shields.io/badge/Firebase-Firestore-FFCA28?logo=firebase" alt="Firebase"> <img src="https://img.shields.io/badge/Docker-Containerized-2496ED?logo=docker" alt="Docker"> <img src="https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-2088FF?logo=github-actions" alt="GitHub Actions"> </p>
 
 📋 Table of Contents
 Project Overview
-
 Problem Statement
-
 Solution Overview
-
 System Architecture
-
 Technology Stack
-
 DevOps Pipeline
-
 Database Design
-
 Project Structure
-
 Wireframes & Design
-
-Website Wireframes
-
-Mobile App Wireframes
-
 Team Members
-
 Milestones
-
 Getting Started
-
 Contributing
-
 License
-
+Contact
+References
+Project Status
 📖 Project Overview
-ChowDown is an independent café and coffee shop situated in Durban CBD. This project aims to develop a unified digital platform that addresses two critical business challenges:
+
+ChowDown Café is an independent café and coffee shop situated in Durban CBD.
+
+The project aims to develop a unified digital platform that addresses two major business challenges:
 
 Challenge	Description
-Marketing & Customer Engagement	Minimal online presence, no digital platform for promotions, sole dependence on foot traffic
-Stock Management	Manual paper-based inventory tracking resulting in inaccurate stock counts
-The system consists of:
+📢 Marketing & Customer Engagement	Limited online presence, no dedicated digital platform for promotions, and reliance on physical foot traffic
+📦 Stock Management	Manual, paper-based inventory tracking resulting in inaccurate stock counts
+The Platform Consists Of
+🌐 PHP Web Admin Panel
 
-PHP Web Admin Panel - For owner and staff to manage marketing posts, stock, and view reports
+Used by the café owner and staff to:
 
-Kotlin Android App - For customers to view promotions, receive notifications, and place orders
+Manage marketing posts
+Manage stock and inventory
+Manage staff
+View analytics
+Generate reports
+📱 Kotlin Android Application
 
-Shared Database - MySQL for business data + Firebase for customer/notification data
+Used by customers to:
 
+View promotions
+Browse products
+Place pickup orders
+Track orders
+Receive notifications
+Contact the café
+🗄️ Shared Data Layer
+MySQL — Business and operational data
+Firebase Firestore — Customer and notification data
 🎯 Problem Statement
-The owner of ChowDown finds it difficult to attract new clients and retain current ones due to an absence of a well-defined digital marketing plan. The business has low online visibility, hindering its ability to compete with rivals that utilise social media, email newsletters, and search engine optimisation.
 
+The owner of ChowDown Café experiences difficulty attracting new customers and retaining existing customers due to the absence of a well-defined digital marketing strategy.
+
+The café has limited online visibility, making it difficult to compete with businesses that utilise:
+
+Social media
+Email newsletters
+Search engine optimisation
+Digital ordering platforms
 Key Issues Identified
-Problem Area	Client Statement	Severity
-Marketing	"Only WhatsApp at this store"	High
-Marketing	Low online visibility	High
-Stock Management	"Keeping an accurate count of stock on a daily basis"	High
-Stock Management	"Stock sheets manually"	High
-Ordering	"Customers cannot place orders remotely"	High
-Ordering	"No digital ordering process, kitchen workflow is manual"	High
-Operations	"Baking at times causes delays"	Medium
-Staff	"Staff challenges"	Medium
+Problem Area	Issue	Severity
+Marketing	Limited digital presence	🔴 High
+Marketing	Low online visibility	🔴 High
+Stock Management	Difficulty maintaining accurate daily stock counts	🔴 High
+Stock Management	Manual stock sheets	🔴 High
+Ordering	Customers cannot place orders remotely	🔴 High
+Ordering	No digital ordering or kitchen workflow	🔴 High
+Operations	Baking schedules can cause delays	🟡 Medium
+Staff	Staff-related operational challenges	🟡 Medium
 🛠️ Solution Overview
-Admin Panel (Web)
-Secure login system for business owner and staff
+🌐 Admin Web Panel
 
-Dashboard with real-time analytics
+The web-based administration system provides:
 
-Marketing post management (Create/Edit/Delete)
+🔐 Secure owner and staff authentication
+📊 Dashboard with real-time analytics
+📢 Marketing post management
+📦 Stock management
+⚠️ Low-stock alerts
+👥 Staff management
+📄 Report generation
+📱 Customer Android Application
 
-Stock management with low-stock alerts
+The mobile application provides:
 
-Staff management
+🚀 Splash screen and onboarding
+📢 Marketing posts and promotions
+🛒 Pickup ordering
+📍 Real-time order tracking
+🔔 Push notifications
+📞 Business contact options
+🗺️ Map/location access
+🗄️ Shared Database
 
-Report generation
+MySQL stores:
 
-Customer App (Android)
-Splash screen and onboarding
+Administrators
+Staff
+Products
+Stock transactions
+Orders
+Marketing posts
+Analytics
 
-Browse marketing posts/promotions
+Firebase Firestore stores:
 
-Place orders for pickup
+Customers
+Notifications
+Customer notification records
+🏗️ System Architecture
 
-Real-time order tracking
+The system follows a multi-component architecture consisting of:
 
-Push notifications
-
-Contact business (call/email/map)
-
-Shared Database
-MySQL: admins, staff, products, stock_transactions, orders, marketing_posts, analytics
-
-Firebase Firestore: customers, notifications, customer_notifications
-
+                    ┌─────────────────────┐
+                    │    Customer App     │
+                    │   Kotlin / Android  │
+                    └──────────┬──────────┘
+                               │
+                               │ API / Firebase
+                               ▼
+                    ┌─────────────────────┐
+                    │    Backend / API    │
+                    │       PHP 8.x       │
+                    └──────────┬──────────┘
+                               │
+                    ┌──────────┴──────────┐
+                    ▼                     ▼
+          ┌─────────────────┐   ┌──────────────────┐
+          │     MySQL       │   │ Firebase         │
+          │ Business Data   │   │ Firestore / FCM  │
+          └─────────────────┘   └──────────────────┘
+                    ▲
+                    │
+          ┌─────────┴─────────┐
+          │   Admin Web Panel │
+          │     PHP / Web     │
+          └───────────────────┘
 💻 Technology Stack
 Programming Languages
-Language	Purpose
-PHP 8.x	Backend development (admin panel & API)
+Technology	Purpose
+PHP 8.x	Backend development, admin panel and API
 Kotlin 1.9.x	Android mobile application
-HTML/CSS/JavaScript	Frontend web development
+HTML / CSS / JavaScript	Web frontend
 SQL	Database management
 Development Tools
 Tool	Purpose
-Android Studio	Mobile app development
-Visual Studio Code	PHP development
+Android Studio	Android application development
+Visual Studio Code	PHP and web development
 MySQL Workbench	Database design
 Figma	UI prototyping
 Postman	API testing
 DevOps Tools
 Tool	Purpose
-GitHub	Version control & collaboration
+GitHub	Version control and collaboration
 GitHub Actions	CI/CD pipeline automation
-Docker	Application containerization
+Docker	Application containerisation
 Docker Compose	Multi-container orchestration
 SonarQube	Static code analysis
 Snyk	Dependency vulnerability scanning
-Prometheus & Grafana	Monitoring and metrics
+Prometheus	Monitoring and metrics
+Grafana	Monitoring dashboards
 Frameworks & Services
-Framework/Service	Purpose
-XAMPP	Local PHP/MySQL server
-Firebase Firestore	NoSQL document store
+Framework / Service	Purpose
+XAMPP	Local PHP/MySQL development server
+Firebase Firestore	NoSQL document database
 Firebase Cloud Messaging	Push notifications
-Chart.js	Web charts
-DevOps KPIs
+Chart.js	Web-based charts and analytics
+⚙️ DevOps KPIs
+
+The project targets the following DevOps performance indicators:
+
 KPI	Target
 Build Time	< 5 minutes
 Test Coverage	> 80%
 Deployment Frequency	Weekly
-MTTR	< 30 minutes
+Mean Time to Recovery (MTTR)	< 30 minutes
 Change Failure Rate	< 15%
 🗄️ Database Design
-MySQL Tables (XAMPP)
+MySQL Database
 Table	Primary Key	Foreign Keys	Description
-admin	adminId	-	System administrators
+admin	adminId	—	System administrators
 staff	staffId	adminId → admin	Café staff members
-product	productId	-	Stock items
-stock_transaction	transactionId	productId → product, staffId → staff	Stock usage records
-low_stock_alert	alertId	productId → product, resolvedBy → staff	Low stock warnings
-marketing_post	postId	adminId → admin	Promotional content
-analytics	analyticsId	postId → marketing_post	View statistics
-orders	orderId	customerId → customer	Customer orders
-order_items	orderItemId	orderId → orders, productId → product	Order items
-Firebase Firestore Collections
+product	productId	—	Stock items
+stock_transaction	transactionId	productId, staffId	Stock usage records
+low_stock_alert	alertId	productId, resolvedBy	Low-stock warnings
+marketing_post	postId	adminId	Promotional content
+analytics	analyticsId	postId	Marketing post statistics
+orders	orderId	customerId	Customer orders
+order_items	orderItemId	orderId, productId	Individual order items
+Firebase Firestore
 Collection	Document ID	Description
 customers	Auto UID	Customer profiles
 notifications	Auto UID	Push notification records
-customer_notifications	Auto UID	Junction: tracks which customers received which notifications
-ERD Diagram
-https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe
+customer_notifications	Auto UID	Tracks notifications received by customers
+Entity Relationship Diagram
+
+<p align="center"> <img src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" alt="ChowDown Café ERD" width="800"> </p>
+
+📁 Project Structure
+ChowDown-Cafe/
+│
+├── admin-panel/
+│   ├── assets/
+│   ├── css/
+│   ├── js/
+│   ├── includes/
+│   └── pages/
+│
+├── android-app/
+│   ├── app/
+│   └── gradle/
+│
+├── database/
+│   └── schema.sql
+│
+├── docker/
+│
+├── docs/
+│   ├── wireframes/
+│   ├── diagrams/
+│   └── documentation/
+│
+├── .github/
+│   └── workflows/
+│
+├── .env.example
+├── docker-compose.yml
+└── README.md
 🎨 Wireframes & Design
-Website Wireframes
-Page	Wireframe	Description
-Login Page	<img width="200" alt="Login" src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" />	Admin/Staff authentication
-Admin Dashboard	<img width="200" alt="Dashboard" src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" />	Overview of key metrics
-Stock Management	<img width="200" alt="Stock" src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" />	Inventory tracking and alerts
-Reports Page	<img width="200" alt="Reports" src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" />	Analytical insights
-Promotions Page	<img width="200" alt="Promotions" src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" />	Marketing content management
-Supplier Details	<img width="200" alt="Suppliers" src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" />	Supplier and procurement management
-Mobile App Wireframes
-Page	Wireframe	Description
-First Screen	<img width="100" alt="First Screen" src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" />	Splash & onboarding
-App Dashboard	<img width="100" alt="App Dashboard" src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" />	Home screen with promotions
-Food Information	<img width="100" alt="Food Info" src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" />	Menu item details
-Item Customization	<img width="100" alt="Customization" src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" />	Size/options selection
-Cart	<img width="100" alt="Cart" src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" />	Order review
-Checkout	<img width="100" alt="Checkout" src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" />	Payment and collection
-Confirmation	<img width="100" alt="Confirmation" src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" />	Order confirmation
-Order Tracking	<img width="100" alt="Tracking" src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" />	Real-time order status
-Settings	<img width="100" alt="Settings" src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" />	Profile and preferences
-Design Tool
+
 All wireframes were created using Figma and Draw.io.
 
+🌐 Website Wireframes
+Page	Description
+Login Page	Admin and staff authentication
+Admin Dashboard	Overview of key business metrics
+Stock Management	Inventory tracking and stock alerts
+Reports Page	Analytical insights and reports
+Promotions Page	Marketing content management
+Supplier Details	Supplier and procurement management
+📱 Mobile App Wireframes
+Screen	Description
+First Screen	Splash screen and onboarding
+App Dashboard	Home screen with promotions
+Food Information	Menu item details
+Item Customization	Size and option selection
+Cart	Order review
+Checkout	Payment and collection
+Confirmation	Order confirmation
+Order Tracking	Real-time order status
+Settings	Profile and preferences
 👥 Team Members
-Name	Student Number	Role	Responsibilities
-Wandile Shobede	ST10457381	Team Leader / Mobile Support	Managing project lifespan, team discussions, quality standards, primary stakeholder contact
-Siphamandla Tshabalala	ST10441479	Project Manager / Mobile App Lead	Note-taking, documentation, meeting coordination, presentations
-Mlondolozi Shezi	ST10458040	Backend Lead / Mobile Support	Database structure, backend functionality, data protection, API development
-Sphumelele Khuzwayo	ST10456229	Database Designer / Mobile Support	User features, backend API integration, code reviews, responsive design
-Team Allocation by Task
-Task	Team Member
+Team Member	Student Number	Role	Responsibilities
+Wandile Shobede	ST10457381	Team Leader / Mobile Support	Project management, team discussions, quality standards and stakeholder communication
+Siphamandla Tshabalala	ST10441479	Project Manager / Mobile App Lead	Documentation, meeting coordination, note-taking and presentations
+Mlondolozi Shezi	ST10458040	Backend Lead / Mobile Support	Database structure, backend functionality, data protection and API development
+Sphumelele Khuzwayo	ST10456229	Database Designer / Mobile Support	User features, backend API integration, code reviews and responsive design
+Team Allocation
+Task	Team Member(s)
 Project Plan Update	All members
 Requirements Review	All members
 Site Map Update	Wandile, Sphumelele
@@ -197,7 +277,7 @@ System Integration	All members
 Testing & Bug Fixing	All members
 Documentation	All members
 🎯 Milestones
-Milestone	Description	Due Date
+Milestone	Description	Due
 M1	Project Initiation	Week 1
 M2	Requirements Approval	Week 3
 M3	Database Design Complete	Week 4
@@ -212,89 +292,82 @@ M11	Final Submission	Week 10
 M12	Retrospective & Feedback	Week 10
 🚀 Getting Started
 Prerequisites
+
+Make sure the following software is installed:
+
 PHP 8.x
-
 MySQL 8.x
-
 XAMPP or WAMP
-
-Android Studio (for mobile app)
-
-Docker (for containerization)
-
+Android Studio
+Docker
 Git
-
-Local Development Setup
-Clone the repository:
-
-bash
+1. Clone the Repository
 git clone https://github.com/YourUsername/ChowDown-Cafe.git
 cd ChowDown-Cafe
-Set up the database:
+2. Set Up the Database
+Start Apache and MySQL in XAMPP.
+Open phpMyAdmin.
+Import:
+database/schema.sql
+3. Configure Environment Variables
 
-Start XAMPP (Apache and MySQL)
+Copy the example environment file:
 
-Import database/schema.sql into phpMyAdmin
+cp .env.example .env
 
-Configure environment:
+Then update the database credentials inside .env.
 
-Copy .env.example to .env
+4. Start the Web Application
 
-Update database credentials
+Place the admin-panel folder inside your XAMPP htdocs directory.
 
-Start the application:
+Then access:
 
-Place the admin-panel folder in XAMPP's htdocs
+http://localhost/chowdown-cafe/admin-panel/
+5. Configure the Android Application
+Open the Android project in Android Studio.
+Configure Firebase.
+Connect the application to the required Firebase services.
+Run the application on an emulator or physical Android device.
+🐳 Optional: Docker
 
-Access at http://localhost/chowdown-cafe/admin-panel/
+To start the Docker environment:
 
-Mobile app (Android Studio):
-
-Open project in Android Studio
-
-Configure Firebase
-
-Run on emulator or physical device
-
-Docker Setup (Optional)
-bash
 docker-compose up -d
 🤝 Contributing
-Fork the repository
 
-Create a feature branch (git checkout -b feature/amazing-feature)
+Contributions are welcome.
 
-Commit your changes (git commit -m 'Add amazing feature')
-
-Push to the branch (git push origin feature/amazing-feature)
-
-Open a Pull Request
-
+Contribution Workflow
+Fork the repository.
+Create a feature branch:
+git checkout -b feature/amazing-feature
+Commit your changes:
+git commit -m "Add amazing feature"
+Push your branch:
+git push origin feature/amazing-feature
+Open a Pull Request.
 Coding Standards
-PHP: Follow PSR-12 coding standards
-
-Kotlin: Follow Android Kotlin style guide
-
-Commits: Write meaningful commit messages
-
+PHP: Follow PSR-12 coding standards.
+Kotlin: Follow the Android Kotlin style guide.
+Git: Use meaningful commit messages.
 📄 License
-This project is developed as part of the Work Integrated Learning (WIL) program at Rosebank College.
+
+This project was developed as part of the Work Integrated Learning (WIL) programme at Rosebank College.
 
 📞 Contact
+
 Project Supervisor: Asande Zikalala
 
 Team Email: ST10457381@rcconnect.edu.za
 
-Client: Mr Ibrahim - ChowDown Café, Durban CBD
+Client: Mr Ibrahim — ChowDown Café, Durban CBD
 
 📚 References
-Bennett, S., McRobb, S. and Farmer, R. (2010). Object-Oriented Systems Analysis and Design Using UML. 4th edn. London: McGraw-Hill.
-
-Firebase. (2023). Firebase Documentation. Available at: https://firebase.google.com/docs
-
-Oracle. (2019). Oracle Database Documentation. Available at: https://docs.oracle.com/en/database
-
-📊 Status
+Bennett, S., McRobb, S. and Farmer, R. (2010). Object-Oriented Systems Analysis and Design Using UML. 4th ed. London: McGraw-Hill.
+Firebase. (2023). Firebase Documentation.
+Oracle. (2019). Oracle Database Documentation.
+📊 Project Status
 Component	Status
 Project Plan	✅ Complete
 Requirements Analysis	✅ Complete
@@ -306,4 +379,5 @@ HTML Pages	🔄 In Progress
 Mobile App	📅 Planned
 Backend API	📅 Planned
 Testing	📅 Planned
-© 2026 Amajongo - Rosebank College WIL Project
+
+<p align="center"> <strong>© 2026 Amajongo — Rosebank College WIL Project</strong> </p>
