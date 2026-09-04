@@ -1,277 +1,289 @@
-# <img width="282" height="179" alt="chowd" src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" /> ChowDown Café - Digital Marketing & Operations Platform
-![Version](https://img.shields.io/badge/version-1.0.0-blue)
-![PHP](https://img.shields.io/badge/PHP-8.x-777BB4?logo=php)
-![Kotlin](https://img.shields.io/badge/Kotlin-1.9.x-7F52FF?logo=kotlin)
-![MySQL](https://img.shields.io/badge/MySQL-8.x-4479A1?logo=mysql)
-![Firebase](https://img.shields.io/badge/Firebase-Firestore-FFCA28?logo=firebase)
-![DevOps](https://img.shields.io/badge/DevOps-GitHub%20Actions-2088FF?logo=github-actions)
-![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?logo=docker)
----
+ChowDown Café - Digital Marketing & Operations Platform
+<p align="center"> <img width="282" height="179" alt="chowd" src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" /> </p><h1 align="center">☕ ChowDown Café</h1> <h3 align="center">Digital Marketing & Operations Platform</h3><p align="center"> <a href="#"><img src="https://img.shields.io/badge/version-1.0.0-blue?style=for-the-badge" alt="Version"/></a> <a href="#"><img src="https://img.shields.io/badge/PHP-8.x-777BB4?style=for-the-badge&logo=php" alt="PHP"/></a> <a href="#"><img src="https://img.shields.io/badge/Kotlin-1.9.x-7F52FF?style=for-the-badge&logo=kotlin" alt="Kotlin"/></a> <a href="#"><img src="https://img.shields.io/badge/MySQL-8.x-4479A1?style=for-the-badge&logo=mysql" alt="MySQL"/></a> <a href="#"><img src="https://img.shields.io/badge/Firebase-Firestore-FFCA28?style=for-the-badge&logo=firebase" alt="Firebase"/></a> <a href="#"><img src="https://img.shields.io/badge/DevOps-GitHub%20Actions-2088FF?style=for-the-badge&logo=github-actions" alt="DevOps"/></a> <a href="#"><img src="https://img.shields.io/badge/Docker-Containerized-2496ED?style=for-the-badge&logo=docker" alt="Docker"/></a> </p><p align="center"> <b>🏆 Rosebank College - Work Integrated Learning (WIL) Project</b><br> <i>Team Amajongo • 2026</i> </p><hr>
+📋 Table of Contents
+<details> <summary><b>📑 Click to expand</b></summary>
+📖 Project Overview
 
-## 📋 Table of Contents
+🎯 Problem Statement
 
-- [Project Overview](#project-overview)
-- [Problem Statement](#problem-statement)
-- [Solution Overview](#solution-overview)
-- [System Architecture](#system-architecture)
-- [Technology Stack](#technology-stack)
-- [DevOps Pipeline](#devops-pipeline)
-- [Database Design](#database-design)
-- [Project Structure](#project-structure)
-- [Wireframes & Design](#wireframes--design)
-- [Team Members](#team-members)
-- [Milestones](#milestones)
-- [Getting Started](#getting-started)
-- [Contributing](#contributing)
-- [License](#license)
+🛠️ Solution Overview
 
----
+🏗️ System Architecture
 
-## 📖 Project Overview
+💻 Technology Stack
 
+🚀 DevOps Pipeline
+
+🗄️ Database Design
+
+📁 Project Structure
+
+🎨 Wireframes & Design
+
+🌐 Website Wireframes
+
+📱 Mobile App Wireframes
+
+👥 Team Members
+
+🎯 Milestones
+
+🚀 Getting Started
+
+🤝 Contributing
+
+📄 License
+
+📞 Contact
+
+</details><hr>
+📖 Project Overview
+<div align="center"> <table> <tr> <td><b>🏢 Location</b></td> <td>Durban CBD, South Africa</td> </tr> <tr> <td><b>👤 Client</b></td> <td>Mr Ibrahim - Owner, ChowDown Café</td> </tr> <tr> <td><b>📅 Established</b></td> <td>September 2024</td> </tr> <tr> <td><b>🎓 Institution</b></td> <td>Rosebank College - Diploma in IT</td> </tr> </table> </div>
 ChowDown is an independent café and coffee shop situated in Durban CBD. This project aims to develop a unified digital platform that addresses two critical business challenges:
 
-| Challenge | Description |
-|-----------|-------------|
-| **Marketing & Customer Engagement** | Minimal online presence, no digital platform for promotions, sole dependence on foot traffic |
-| **Stock Management** | Manual paper-based inventory tracking resulting in inaccurate stock counts |
-
-The system consists of:
-
-- **PHP Web Admin Panel** - For owner and staff to manage marketing posts, stock, and view reports
-- **Kotlin Android App** - For customers to view promotions, receive notifications, and place orders
-- **Shared Database** - MySQL for business data + Firebase for customer/notification data
-
----
-
-## 🎯 Problem Statement
-
+<table align="center"> <tr> <th>Challenge</th> <th>Description</th> </tr> <tr> <td><b>📢 Marketing & Customer Engagement</b></td> <td>Minimal online presence, no digital platform for promotions, sole dependence on foot traffic</td> </tr> <tr> <td><b>📦 Stock Management</b></td> <td>Manual paper-based inventory tracking resulting in inaccurate stock counts</td> </tr> </table>
+🎯 SMART Objectives
+<table align="center"> <tr> <th>Objective</th> <th>Target</th> <th>Alignment</th> </tr> <tr> <td>📈 Increase customer engagement</td> <td>50 app downloads + 30 email sign-ups in first month</td> <td>Marketing</td> </tr> <tr> <td>📊 Improve stock accuracy</td> <td>Reduce stock discrepancies by 90%</td> <td>Stock Management</td> </tr> <tr> <td>⏱️ Staff efficiency</td> <td>Record stock usage in under 30 seconds</td> <td>Stock Management</td> </tr> <tr> <td>👁️ Real-time visibility</td> <td>Owner sees stock levels and low-stock alerts instantly</td> <td>Stock Management</td> </tr> <tr> <td>📱 Digital marketing reach</td> <td>Publish promotions instantly to all app users</td> <td>Marketing</td> </tr> </table><hr>
+🎯 Problem Statement
 The owner of ChowDown finds it difficult to attract new clients and retain current ones due to an absence of a well-defined digital marketing plan. The business has low online visibility, hindering its ability to compete with rivals that utilise social media, email newsletters, and search engine optimisation.
 
-### Key Issues Identified
+🔴 Key Issues Identified
+<table align="center"> <tr> <th>Problem Area</th> <th>Client Statement</th> <th>Severity</th> </tr> <tr> <td>📢 Marketing</td> <td>"Only WhatsApp at this store"</td> <td><b>🔴 High</b></td> </tr> <tr> <td>📢 Marketing</td> <td>Low online visibility</td> <td><b>🔴 High</b></td> </tr> <tr> <td>📦 Stock Management</td> <td>"Keeping an accurate count of stock on a daily basis"</td> <td><b>🔴 High</b></td> </tr> <tr> <td>📦 Stock Management</td> <td>"Stock sheets manually"</td> <td><b>🔴 High</b></td> </tr> <tr> <td>🛒 Ordering</td> <td>"Customers cannot place orders remotely"</td> <td><b>🔴 High</b></td> </tr> <tr> <td>🛒 Ordering</td> <td>"No digital ordering process, kitchen workflow is manual"</td> <td><b>🔴 High</b></td> </tr> <tr> <td>⚙️ Operations</td> <td>"Baking at times causes delays"</td> <td><b>🟡 Medium</b></td> </tr> <tr> <td>👥 Staff</td> <td>"Staff challenges"</td> <td><b>🟡 Medium</b></td> </tr> </table><hr>
+🛠️ Solution Overview
+📱 System Components
+<div align="center"> <table> <tr> <th width="33%">🌐 Admin Panel (Web)</th> <th width="33%">📱 Customer App (Android)</th> <th width="34%">🗄️ Shared Database</th> </tr> <tr> <td> • Secure login system<br> • Dashboard with analytics<br> • Marketing post management<br> • Stock management<br> • Staff management<br> • Report generation<br> • Supplier management </td> <td> • Splash screen & onboarding<br> • Browse promotions<br> • Place orders for pickup<br> • Real-time order tracking<br> • Push notifications<br> • Contact business<br> • Settings management </td> <td> <b>MySQL (XAMPP)</b><br> • admins<br> • staff<br> • products<br> • orders<br> • marketing_posts<br> <br> <b>Firebase Firestore</b><br> • customers<br> • notifications </td> </tr> </table> </div>
+📊 Value Added
+<table align="center"> <tr> <th>Benefit</th> <th>Impact</th> </tr> <tr> <td>💰 Increased Revenue</td> <td>10+ additional daily orders</td> </tr> <tr> <td>📉 Reduced Waste</td> <td>5% reduction in stock spoilage</td> </tr> <tr> <td>📢 Better Marketing</td> <td>Direct customer engagement via app</td> </tr> <tr> <td>⏱️ Time Savings</td> <td>2 hours/day saved for staff</td> </tr> <tr> <td>📈 ROI</td> <td>243% return on investment</td> </tr> </table><hr>
+🏗️ System Architecture
+Three-Tier Architecture
+text
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                        THREE-TIER ARCHITECTURE                             │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                             │
+│  ┌─────────────────────────────────────────────────────────────────────┐   │
+│  │                    PRESENTATION LAYER (Frontend)                    │   │
+│  │                                                                     │   │
+│  │     ┌─────────────────────┐    ┌─────────────────────────────────┐ │   │
+│  │     │   Web Admin Panel   │    │      Android App (Kotlin)       │ │   │
+│  │     │   (PHP/HTML/CSS)    │    │      (XML Layouts)             │ │   │
+│  │     └─────────────────────┘    └─────────────────────────────────┘ │   │
+│  └─────────────────────────────────────────────────────────────────────┘   │
+│                                    │                                       │
+│                                    ▼                                       │
+│  ┌─────────────────────────────────────────────────────────────────────┐   │
+│  │                    APPLICATION LOGIC LAYER (Backend)               │   │
+│  │                                                                     │   │
+│  │     ┌─────────────────────┐    ┌─────────────────────────────────┐ │   │
+│  │     │   PHP Controllers   │    │   Firebase Cloud Functions     │ │   │
+│  │     │   REST API          │    │                                │ │   │
+│  │     └─────────────────────┘    └─────────────────────────────────┘ │   │
+│  └─────────────────────────────────────────────────────────────────────┘   │
+│                                    │                                       │
+│                                    ▼                                       │
+│  ┌─────────────────────────────────────────────────────────────────────┐   │
+│  │                        DATA LAYER (Database)                       │   │
+│  │                                                                     │   │
+│  │     ┌─────────────────────┐    ┌─────────────────────────────────┐ │   │
+│  │     │   MySQL (XAMPP)     │    │   Firebase Firestore           │ │   │
+│  │     │   - Business Data   │    │   - Customer Profiles          │ │   │
+│  │     │   - Stock/Orders    │    │   - Notifications              │ │   │
+│  │     └─────────────────────┘    └─────────────────────────────────┘ │   │
+│  └─────────────────────────────────────────────────────────────────────┘   │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+<hr>
+💻 Technology Stack
+Programming Languages
+Language	Purpose	Version
+PHP	Backend development (admin panel & API)	8.x
+Kotlin	Android mobile application	1.9.x
+HTML/CSS/JS	Frontend web development	-
+SQL	Database management	-
+Development Tools
+Tool	Purpose
+Android Studio	Mobile app development
+Visual Studio Code	PHP development
+MySQL Workbench	Database design
+Figma	UI prototyping
+Postman	API testing
+DevOps Tools
+Tool	Purpose
+GitHub	Version control & collaboration
+GitHub Actions	CI/CD pipeline automation
+Docker	Application containerization
+Docker Compose	Multi-container orchestration
+SonarQube	Static code analysis
+Snyk	Dependency vulnerability scanning
+Prometheus & Grafana	Monitoring and metrics
+Frameworks & Services
+Framework/Service	Purpose
+XAMPP	Local PHP/MySQL server
+Firebase Firestore	NoSQL document store
+Firebase Cloud Messaging	Push notifications
+Chart.js	Web charts
+<hr>
+🚀 DevOps Pipeline
+CI/CD Workflow
+text
+┌─────────────────────────────────────────────────────────────────────────────────────┐
+│                              CI/CD PIPELINE (GitHub Actions)                        │
+├─────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                     │
+│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐    ┌──────────────────┐ │
+│  │   CODE       │───▶│   BUILD      │───▶│   TEST       │───▶│   STATIC         │ │
+│  │   COMMIT     │    │   (PHP/      │    │   (Unit/     │    │   ANALYSIS       │ │
+│  │              │    │    Kotlin)   │    │   Integration│    │   (SonarQube)    │ │
+│  └──────────────┘    └──────────────┘    └──────────────┘    └────────┬─────────┘ │
+│                                                                         │           │
+│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐    ┌────────┴─────────┐ │
+│  │   SECURITY   │◀───│   CONTAINER  │◀───│   DEPLOY     │◀───│   PACKAGE        │ │
+│  │   SCAN       │    │   BUILD      │    │   (Staging)  │    │                  │ │
+│  │   (Snyk)     │    │   (Docker)   │    │              │    │                  │ │
+│  └──────────────┘    └──────────────┘    └──────────────┘    └────────┬─────────┘ │
+│                                                                         │           │
+│                                                                         ▼           │
+│                                                              ┌──────────────────┐ │
+│                                                              │   DEPLOY         │ │
+│                                                              │   (Production)   │ │
+│                                                              └──────────────────┘ │
+│                                                                                     │
+│  ┌──────────────┐                                                                  │
+│  │  MONITORING  │◀─────────────────────────────────────────────────────────────────│
+│  │  (Prometheus │                                                                  │
+│  │   + Grafana) │                                                                  │
+│  └──────────────┘                                                                  │
+└─────────────────────────────────────────────────────────────────────────────────────┘
+DevOps KPIs
+KPI	Target
+Build Time	< 5 minutes
+Test Coverage	> 80%
+Deployment Frequency	Weekly
+MTTR	< 30 minutes
+Change Failure Rate	< 15%
+<hr>
+🗄️ Database Design
+MySQL Tables (XAMPP)
+Table	Primary Key	Foreign Keys	Description
+admin	adminId	-	System administrators
+staff	staffId	adminId → admin	Café staff members
+product	productId	-	Stock items
+stock_transaction	transactionId	productId → product, staffId → staff	Stock usage records
+low_stock_alert	alertId	productId → product, resolvedBy → staff	Low stock warnings
+marketing_post	postId	adminId → admin	Promotional content
+analytics	analyticsId	postId → marketing_post	View statistics
+orders	orderId	customerId → customer	Customer orders
+order_items	orderItemId	orderId → orders, productId → product	Order items
+Firebase Firestore Collections
+Collection	Document ID	Description
+customers	Auto UID	Customer profiles
+notifications	Auto UID	Push notification records
+customer_notifications	Auto UID	Junction: tracks which customers received which notifications
+ERD Diagram
+https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe
 
-| Problem Area | Client Statement | Severity |
-|--------------|------------------|----------|
-| Marketing | "Only WhatsApp at this store" | High |
-| Marketing | Low online visibility | High |
-| Stock Management | "Keeping an accurate count of stock on a daily basis" | High |
-| Stock Management | "Stock sheets manually" | High |
-| Ordering | "Customers cannot place orders remotely" | High |
-| Ordering | "No digital ordering process, kitchen workflow is manual" | High |
-| Operations | "Baking at times causes delays" | Medium |
-| Staff | "Staff challenges" | Medium |
+<hr>
+📁 Project Structure
+bash
+chowdown-cafe/
+├── 📄 README.md
+├── 📁 admin-panel/               # Web Admin Panel
+│   ├── 📄 index.html             # Login page
+│   ├── 📄 dashboard.html         # Admin dashboard
+│   ├── 📄 stock.html             # Stock management
+│   ├── 📄 reports.html           # Reports page
+│   ├── 📄 promotions.html        # Promotions management
+│   ├── 📄 suppliers.html         # Supplier management
+│   ├── 📁 css/
+│   │   └── 📄 style.css
+│   ├── 📁 js/
+│   │   └── 📄 script.js
+│   └── 📁 assets/
+│       └── 📁 images/
+├── 📁 mobile-app/                # Kotlin Android App
+│   └── 📄 (Figma prototype)
+├── 📁 backend/                   # PHP Backend
+│   ├── 📁 api/
+│   │   ├── 📄 auth.php
+│   │   ├── 📄 posts.php
+│   │   ├── 📄 stock.php
+│   │   ├── 📄 orders.php
+│   │   └── 📄 reports.php
+│   ├── 📁 config/
+│   │   └── 📄 database.php
+│   └── 📁 models/
+├── 📁 database/                  # Database Scripts
+│   ├── 📄 schema.sql
+│   └── 📁 migrations/
+├── 📁 docker/                    # Docker Configuration
+│   ├── 📄 Dockerfile
+│   └── 📄 docker-compose.yml
+├── 📁 docs/                      # Documentation
+│   ├── 📄 WIL_Task1_Submission.docx
+│   └── 📁 wireframes/
+└── 📁 .github/                   # GitHub Actions
+    └── 📁 workflows/
+        └── 📄 ci.yml
+<hr>
+🎨 Wireframes & Design
+🌐 Website Wireframes
+<div align="center"> <table> <tr> <td align="center"> <img src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" alt="Login Page" width="250"/><br> <b>Login Page</b> </td> <td align="center"> <img src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" alt="Dashboard" width="250"/><br> <b>Admin Dashboard</b> </td> </tr> <tr> <td align="center"> <img src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" alt="Stock" width="250"/><br> <b>Stock Management</b> </td> <td align="center"> <img src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" alt="Reports" width="250"/><br> <b>Reports Page</b> </td> </tr> <tr> <td align="center"> <img src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" alt="Promotions" width="250"/><br> <b>Promotions Page</b> </td> <td align="center"> <img src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" alt="Suppliers" width="250"/><br> <b>Supplier Details</b> </td> </tr> </table> </div>
+📱 Mobile App Wireframes
+<div align="center"> <table> <tr> <td align="center"> <img src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" alt="First Screen" width="120"/><br> <b>First Screen</b> </td> <td align="center"> <img src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" alt="Dashboard" width="120"/><br> <b>App Dashboard</b> </td> <td align="center"> <img src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" alt="Food Info" width="120"/><br> <b>Food Information</b> </td> </tr> <tr> <td align="center"> <img src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" alt="Customization" width="120"/><br> <b>Item Customization</b> </td> <td align="center"> <img src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" alt="Cart" width="120"/><br> <b>Cart</b> </td> <td align="center"> <img src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" alt="Checkout" width="120"/><br> <b>Checkout</b> </td> </tr> <tr> <td align="center"> <img src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" alt="Confirmation" width="120"/><br> <b>Confirmation</b> </td> <td align="center"> <img src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" alt="Tracking" width="120"/><br> <b>Order Tracking</b> </td> <td align="center"> <img src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" alt="Settings" width="120"/><br> <b>Settings</b> </td> </tr> </table> </div>
+Design Tool
+All wireframes were created using Figma and Draw.io.
 
----
+<hr>
+👥 Team Members
+<table align="center"> <tr> <th>Name</th> <th>Student Number</th> <th>Role</th> <th>Responsibilities</th> </tr> <tr> <td><b>Wandile Shobede</b></td> <td>ST10457381</td> <td>Team Leader / Mobile Support</td> <td>Managing project lifespan, team discussions, quality standards, stakeholder contact</td> </tr> <tr> <td><b>Siphamandla Tshabalala</b></td> <td>ST10441479</td> <td>Project Manager / Mobile App Lead</td> <td>Documentation, meeting coordination, presentations</td> </tr> <tr> <td><b>Mlondolozi Shezi</b></td> <td>ST10458040</td> <td>Backend Lead / Mobile Support</td> <td>Database structure, backend functionality, API development</td> </tr> <tr> <td><b>Sphumelele Khuzwayo</b></td> <td>ST10456229</td> <td>Database Designer / Mobile Support</td> <td>User features, backend API integration, code reviews</td> </tr> </table>
+Team Allocation by Task
+Task	Team Member
+Project Plan Update	All members
+Requirements Review	All members
+Site Map Update	Wandile, Sphumelele
+Wireframe Design Update	Wandile, Sphumelele
+System Design Review	All members
+DevOps Setup	Mlondolozi, Wandile
+System Development	All members
+System Integration	All members
+Testing & Bug Fixing	All members
+Documentation	All members
+<hr>
+🎯 Milestones
+Milestone	Description	Due Date
+M1	Project Initiation	Week 1
+M2	Requirements Approval	Week 3
+M3	Database Design Complete	Week 4
+M4	CI/CD Pipeline Setup	Week 5
+M5	PHP Backend Complete	Week 6
+M6	Kotlin App Prototype	Week 8
+M7	Integration Complete	Week 9
+M8	Code Quality & Security Review	Week 9
+M9	Deployment & Monitoring	Week 10
+M10	Documentation & Handover	Week 10
+M11	Final Submission	Week 10
+M12	Retrospective & Feedback	Week 10
+<hr>
+🚀 Getting Started
+Prerequisites
+PHP 8.x
 
-## 🛠️ Solution Overview
+MySQL 8.x
 
-### Admin Panel (Web)
+XAMPP or WAMP
 
-- Secure login system for business owner and staff
-- Dashboard with real-time analytics
-- Marketing post management (Create/Edit/Delete)
-- Stock management with low-stock alerts
-- Staff management
-- Report generation
+Android Studio (for mobile app)
 
-### Customer App (Android)
+Docker (for containerization)
 
-- Splash screen and onboarding
-- Browse marketing posts/promotions
-- Place orders for pickup
-- Real-time order tracking
-- Push notifications
-- Contact business (call/email/map)
+Git
 
-### Shared Database
+Local Development Setup
+Clone the repository:
 
-- MySQL: admins, staff, products, stock_transactions, orders, marketing_posts, analytics
-- Firebase Firestore: customers, notifications, customer_notifications
-
----
-
-
-## 💻 Technology Stack
-
-### Programming Languages
-
-| Language | Purpose |
-|----------|---------|
-| PHP 8.x | Backend development (admin panel & API) |
-| Kotlin 1.9.x | Android mobile application |
-| HTML/CSS/JavaScript | Frontend web development |
-| SQL | Database management |
-
-### Development Tools
-
-| Tool | Purpose |
-|------|---------|
-| Android Studio | Mobile app development |
-| Visual Studio Code | PHP development |
-| MySQL Workbench | Database design |
-| Figma | UI prototyping |
-| Postman | API testing |
-
-### DevOps Tools
-
-| Tool | Purpose |
-|------|---------|
-| GitHub | Version control & collaboration |
-| GitHub Actions | CI/CD pipeline automation |
-| Docker | Application containerization |
-| Docker Compose | Multi-container orchestration |
-| SonarQube | Static code analysis |
-| Snyk | Dependency vulnerability scanning |
-| Prometheus & Grafana | Monitoring and metrics |
-
-### Frameworks & Services
-
-| Framework/Service | Purpose |
-|-------------------|---------|
-| XAMPP | Local PHP/MySQL server |
-| Firebase Firestore | NoSQL document store |
-| Firebase Cloud Messaging | Push notifications |
-| Chart.js | Web charts |
-
----
-
-
-### DevOps KPIs
-
-| KPI | Target |
-|-----|--------|
-| Build Time | < 5 minutes |
-| Test Coverage | > 80% |
-| Deployment Frequency | Weekly |
-| MTTR | < 30 minutes |
-| Change Failure Rate | < 15% |
-
----
-
-## 🗄️ Database Design
-
-### MySQL Tables (XAMPP)
-
-| Table | Primary Key | Foreign Keys | Description |
-|-------|-------------|--------------|-------------|
-| `admin` | adminId | - | System administrators |
-| `staff` | staffId | adminId → admin | Café staff members |
-| `product` | productId | - | Stock items |
-| `stock_transaction` | transactionId | productId → product, staffId → staff | Stock usage records |
-| `low_stock_alert` | alertId | productId → product, resolvedBy → staff | Low stock warnings |
-| `marketing_post` | postId | adminId → admin | Promotional content |
-| `analytics` | analyticsId | postId → marketing_post | View statistics |
-| `orders` | orderId | customerId → customer | Customer orders |
-| `order_items` | orderItemId | orderId → orders, productId → product | Order items |
-
-### Firebase Firestore Collections
-
-| Collection | Document ID | Description |
-|------------|-------------|-------------|
-| `customers` | Auto UID | Customer profiles |
-| `notifications` | Auto UID | Push notification records |
-| `customer_notifications` | Auto UID | Junction: tracks which customers received which notifications |
-
-
----
-
-
-## 🎨 Wireframes & Design
-
-### Website Wireframes
-
-| Page | Description |
-|------|-------------|
-| Login Page | Admin/Staff authentication |
-| Admin Dashboard | Overview of key metrics |
-| Stock Management | Inventory tracking and alerts |
-| Reports Page | Analytical insights |
-| Promotions Page | Marketing content management |
-| Supplier Details | Supplier and procurement management |
-
-### Mobile App Wireframes
-
-| Page | Description |
-|------|-------------|
-| First Screen | Splash & onboarding |
-| App Dashboard | Home screen with promotions |
-| Food Information | Menu item details |
-| Item Customization | Size/options selection |
-| Cart | Order review |
-| Checkout | Payment and collection |
-| Confirmation | Order confirmation |
-| Order Tracking | Real-time order status |
-| Settings | Profile and preferences |
-
-### Design Tool
-
-All wireframes were created using **Figma** and **Draw.io**.
-
----
-
-## 👥 Team Members
-
-| Name | Student Number | Role | Responsibilities |
-|------|----------------|------|------------------|
-| Wandile Shobede| ST10457381 | Team Leader / Mobile Support | Managing project lifespan, team discussions, quality standards, primary stakeholder contact | 
-| Siphamandla Tshabalala| ST10441479 | Project Manager / Mobile App Lead | Note-taking, documentation, meeting coordination, presentations | 
-| Mlondolozi Shezi| ST10458040 | Backend Lead / Mobile Support | Database structure, backend functionality, data protection, API development | 
-| Sphumelele Khuzwayo| ST10456229 | Database Designer / Mobile Support | User features, backend API integration, code reviews, responsive design | 
-
-
-### Team Allocation by Task
-
-| Task | Team Member |
-|------|-------------|
-| Project Plan Update | All members |
-| Requirements Review | All members |
-| Site Map Update | Wandile, Sphumelele |
-| Wireframe Design Update | Wandile, Sphumelele |
-| System Design Review | All members |
-| DevOps Setup | Mlondolozi, Wandile |
-| System Development | All members |
-| System Integration | All members |
-| Testing & Bug Fixing | All members |
-| Documentation | All members |
-
----
-
-## 🎯 Milestones
-
-| Milestone | Description | Due Date |
-|-----------|-------------|----------|
-| M1 | Project Initiation | Week 1 |
-| M2 | Requirements Approval | Week 3 |
-| M3 | Database Design Complete | Week 4 |
-| M4 | CI/CD Pipeline Setup | Week 5 |
-| M5 | PHP Backend Complete | Week 6 |
-| M6 | Kotlin App Prototype | Week 8 |
-| M7 | Integration Complete | Week 9 |
-| M8 | Code Quality & Security Review | Week 9 |
-| M9 | Deployment & Monitoring | Week 10 |
-| M10 | Documentation & Handover | Week 10 |
-| M11 | Final Submission | Week 10 |
-| M12 | Retrospective & Feedback | Week 10 |
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- PHP 8.x
-- MySQL 8.x
-- XAMPP or WAMP
-- Android Studio (for mobile app)
-- Docker (for containerization)
-- Git
-
-### Local Development Setup
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/YourUsername/ChowDown-Cafe.git
-   cd ChowDown-Cafe
+bash
+git clone https://github.com/YourUsername/ChowDown-Cafe.git
+cd ChowDown-Cafe
 Set up the database:
 
 Start XAMPP (Apache and MySQL)
@@ -298,10 +310,11 @@ Configure Firebase
 
 Run on emulator or physical device
 
----
-   
-## 🤝 Contributing
-
+Docker Setup (Optional)
+bash
+docker-compose up -d
+<hr>
+🤝 Contributing
 Fork the repository
 
 Create a feature branch (git checkout -b feature/amazing-feature)
@@ -319,16 +332,17 @@ Kotlin: Follow Android Kotlin style guide
 
 Commits: Write meaningful commit messages
 
+<hr>
 📄 License
 This project is developed as part of the Work Integrated Learning (WIL) program at Rosebank College.
 
+<hr>
 📞 Contact
-Project Supervisor: Asande Zikalala
-
-Team Email: ST10457381@rcconnect.edu.za
-
-Client: Mr Ibrahim - ChowDown Café, Durban CBD
-
+Role	Name	Contact
+Project Supervisor	Asande Zikalala	-
+Team Email	-	ST10457381@rcconnect.edu.za
+Client	Mr Ibrahim	ChowDown Café, Durban CBD
+<hr>
 📚 References
 Bennett, S., McRobb, S. and Farmer, R. (2010). Object-Oriented Systems Analysis and Design Using UML. 4th edn. London: McGraw-Hill.
 
@@ -336,58 +350,6 @@ Firebase. (2023). Firebase Documentation. Available at: https://firebase.google.
 
 Oracle. (2019). Oracle Database Documentation. Available at: https://docs.oracle.com/en/database
 
+<hr>
 📊 Status
-Component	Status
-Project Plan	✅ Complete
---
-Requirements Analysis	✅ Complete
---
-System Design	✅ Complete
---
-Wireframes	✅ Complete
---
-ERD Design	✅ Complete
---
-DevOps Pipeline	🔄 In Progress
---
-HTML Pages	🔄 In Progress
---
-Mobile App	📅 Planned
---
-Backend API	📅 Planned
---
-Testing	📅 Planned
---
-© 2026 Amajongo - Rosebank College WIL Project
-
----
-
-## HOW TO USE THIS README
-
-1. **Create a GitHub repository** called `ChowDown-Cafe`
-2. **Initialize with a README**
-3. **Copy and paste** the above content into your `README.md`
-4. **Update the repository link** to your actual GitHub URL
-5. **Add screenshots** of your wireframes to the `docs/wireframes/` folder
-6. **Push your code** and the README to GitHub
-
----
-
-## WHAT'S INCLUDED IN THIS README
-
-| Section | Purpose |
-|---------|---------|
-| Project Overview | High-level description of the project |
-| Problem Statement | Why this project exists |
-| Solution Overview | What the system does |
-| System Architecture | Technical design |
-| Technology Stack | Tools and languages used |
-| DevOps Pipeline | CI/CD workflow |
-| Database Design | ERD and table structure |
-| Project Structure | Folder organisation |
-| Wireframes & Design | UI/UX documentation |
-| Team Members | Roles and responsibilities |
-| Milestones | Project timeline |
-| Getting Started | Setup instructions |
-| Contributing | How to contribute |
-| Status | Current project progress |
+<table align="center"> <tr> <th>Component</th> <th>Status</th> </tr> <tr> <td>Project Plan</td> <td>✅ Complete</td> </tr> <tr> <td>Requirements Analysis</td> <td>✅ Complete</td> </tr> <tr> <td>System Design</td> <td>✅ Complete</td> </tr> <tr> <td>Wireframes</td> <td>✅ Complete</td> </tr> <tr> <td>ERD Design</td> <td>✅ Complete</td> </tr> <tr> <td>DevOps Pipeline</td> <td>🔄 In Progress</td> </tr> <tr> <td>HTML Pages</td> <td>🔄 In Progress</td> </tr> <tr> <td>Mobile App</td> <td>📅 Planned</td> </tr> <tr> <td>Backend API</td> <td>📅 Planned</td> </tr> <tr> <td>Testing</td> <td>📅 Planned</td> </tr> </table><hr><p align="center"> <b>© 2026 Amajongo - Rosebank College WIL Project</b><br> <i>Made with ❤️ by Team Amajongo</i> </p>
