@@ -85,7 +85,7 @@ Deployment Frequency	Weekly
 MTTR	< 30 minutes
 Change Failure Rate	< 15%
 <hr>
-🗄️ Database Design
+## 🗄️ Database Design
 MySQL Tables (XAMPP)
 Table	Primary Key	Foreign Keys	Description
 admin	adminId	-	System administrators
@@ -130,7 +130,7 @@ System Integration	All members
 Testing & Bug Fixing	All members
 Documentation	All members
 <hr>
-🎯 Milestones
+## 🎯 Milestones
 Milestone	Description	Due Date
 M1	Project Initiation	Week 1
 M2	Requirements Approval	Week 3
@@ -224,7 +224,7 @@ Project Supervisor	Asande Zikalala	-
 Team Email	-	ST10457381@rcconnect.edu.za
 Client	Mr Ibrahim	ChowDown Café, Durban CBD
 <hr>
-📚 References
+## 📚 References
 Bennett, S., McRobb, S. and Farmer, R. (2010). Object-Oriented Systems Analysis and Design Using UML. 4th edn. London: McGraw-Hill.
 
 Firebase. (2023). Firebase Documentation. Available at: https://firebase.google.com/docs
