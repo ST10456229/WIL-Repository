@@ -142,4 +142,228 @@ The owner of ChowDown finds it difficult to attract new clients and retain curre
 
 ### CI/CD Workflow
 
+
+### DevOps KPIs
+
+| KPI | Target |
+|-----|--------|
+| Build Time | < 5 minutes |
+| Test Coverage | > 80% |
+| Deployment Frequency | Weekly |
+| MTTR | < 30 minutes |
+| Change Failure Rate | < 15% |
+
+---
+
+## 🗄️ Database Design
+
+### MySQL Tables (XAMPP)
+
+| Table | Primary Key | Foreign Keys | Description |
+|-------|-------------|--------------|-------------|
+| `admin` | adminId | - | System administrators |
+| `staff` | staffId | adminId → admin | Café staff members |
+| `product` | productId | - | Stock items |
+| `stock_transaction` | transactionId | productId → product, staffId → staff | Stock usage records |
+| `low_stock_alert` | alertId | productId → product, resolvedBy → staff | Low stock warnings |
+| `marketing_post` | postId | adminId → admin | Promotional content |
+| `analytics` | analyticsId | postId → marketing_post | View statistics |
+| `orders` | orderId | customerId → customer | Customer orders |
+| `order_items` | orderItemId | orderId → orders, productId → product | Order items |
+
+### Firebase Firestore Collections
+
+| Collection | Document ID | Description |
+|------------|-------------|-------------|
+| `customers` | Auto UID | Customer profiles |
+| `notifications` | Auto UID | Push notification records |
+| `customer_notifications` | Auto UID | Junction: tracks which customers received which notifications |
+
+### ERD Summary
+
+
+---
+
+## 📁 Project Structure
+
+---
+
+## 🎨 Wireframes & Design
+
+### Website Wireframes
+
+| Page | Description |
+|------|-------------|
+| Login Page | Admin/Staff authentication |
+| Admin Dashboard | Overview of key metrics |
+| Stock Management | Inventory tracking and alerts |
+| Reports Page | Analytical insights |
+| Promotions Page | Marketing content management |
+| Supplier Details | Supplier and procurement management |
+
+### Mobile App Wireframes
+
+| Page | Description |
+|------|-------------|
+| First Screen | Splash & onboarding |
+| App Dashboard | Home screen with promotions |
+| Food Information | Menu item details |
+| Item Customization | Size/options selection |
+| Cart | Order review |
+| Checkout | Payment and collection |
+| Confirmation | Order confirmation |
+| Order Tracking | Real-time order status |
+| Settings | Profile and preferences |
+
+### Design Tool
+
+All wireframes were created using **Figma** and **Draw.io**.
+
+---
+
+## 👥 Team Members
+
+| Name | Student Number | Role | Responsibilities |
+|------|----------------|------|------------------|
+| Wandile Shobede | ST10457381 | Team Leader / Mobile Support | Managing project lifespan, team discussions, quality standards, primary stakeholder contact |
+| Siphamandla Tshabalala | ST10441479 | Project Manager / Mobile App Lead | Note-taking, documentation, meeting coordination, presentations |
+| Mlondolozi Shezi | ST10458040 | Backend Lead / Mobile Support | Database structure, backend functionality, data protection, API development |
+| Sphumelele Khuzwayo | ST10456229 | Database Designer / Mobile Support | User features, backend API integration, code reviews, responsive design |
+
+### Team Allocation by Task
+
+| Task | Team Member |
+|------|-------------|
+| Project Plan Update | All members |
+| Requirements Review | All members |
+| Site Map Update | Wandile, Sphumelele |
+| Wireframe Design Update | Wandile, Sphumelele |
+| System Design Review | All members |
+| DevOps Setup | Mlondolozi, Wandile |
+| System Development | All members |
+| System Integration | All members |
+| Testing & Bug Fixing | All members |
+| Documentation | All members |
+
+---
+
+## 🎯 Milestones
+
+| Milestone | Description | Due Date |
+|-----------|-------------|----------|
+| M1 | Project Initiation | Week 1 |
+| M2 | Requirements Approval | Week 3 |
+| M3 | Database Design Complete | Week 4 |
+| M4 | CI/CD Pipeline Setup | Week 5 |
+| M5 | PHP Backend Complete | Week 6 |
+| M6 | Kotlin App Prototype | Week 8 |
+| M7 | Integration Complete | Week 9 |
+| M8 | Code Quality & Security Review | Week 9 |
+| M9 | Deployment & Monitoring | Week 10 |
+| M10 | Documentation & Handover | Week 10 |
+| M11 | Final Submission | Week 10 |
+| M12 | Retrospective & Feedback | Week 10 |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- PHP 8.x
+- MySQL 8.x
+- XAMPP or WAMP
+- Android Studio (for mobile app)
+- Docker (for containerization)
+- Git
+
+### Local Development Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/YourUsername/ChowDown-Cafe.git
+   cd ChowDown-Cafe
+   🤝 Contributing
+Fork the repository
+
+Create a feature branch (git checkout -b feature/amazing-feature)
+
+Commit your changes (git commit -m 'Add amazing feature')
+
+Push to the branch (git push origin feature/amazing-feature)
+
+Open a Pull Request
+
+Coding Standards
+PHP: Follow PSR-12 coding standards
+
+Kotlin: Follow Android Kotlin style guide
+
+Commits: Write meaningful commit messages
+
+📄 License
+This project is developed as part of the Work Integrated Learning (WIL) program at Rosebank College.
+
+📞 Contact
+Project Supervisor: Asande Zikalala
+
+Team Email: wil.team@chowdown.com
+
+Client: Mr Ibrahim - ChowDown Café, Durban CBD
+
+📚 References
+Bennett, S., McRobb, S. and Farmer, R. (2010). Object-Oriented Systems Analysis and Design Using UML. 4th edn. London: McGraw-Hill.
+
+Firebase. (2023). Firebase Documentation. Available at: https://firebase.google.com/docs
+
+Oracle. (2019). Oracle Database Documentation. Available at: https://docs.oracle.com/en/database
+
+📊 Status
+Component	Status
+Project Plan	✅ Complete
+Requirements Analysis	✅ Complete
+System Design	✅ Complete
+Wireframes	✅ Complete
+ERD Design	✅ Complete
+DevOps Pipeline	🔄 In Progress
+HTML Pages	🔄 In Progress
+Mobile App	📅 Planned
+Backend API	📅 Planned
+Testing	📅 Planned
+© 2026 Amajongo - Rosebank College WIL Project
+
+text
+
+---
+
+## HOW TO USE THIS README
+
+1. **Create a GitHub repository** called `ChowDown-Cafe`
+2. **Initialize with a README**
+3. **Copy and paste** the above content into your `README.md`
+4. **Update the repository link** to your actual GitHub URL
+5. **Add screenshots** of your wireframes to the `docs/wireframes/` folder
+6. **Push your code** and the README to GitHub
+
+---
+
+## WHAT'S INCLUDED IN THIS README
+
+| Section | Purpose |
+|---------|---------|
+| Project Overview | High-level description of the project |
+| Problem Statement | Why this project exists |
+| Solution Overview | What the system does |
+| System Architecture | Technical design |
+| Technology Stack | Tools and languages used |
+| DevOps Pipeline | CI/CD workflow |
+| Database Design | ERD and table structure |
+| Project Structure | Folder organisation |
+| Wireframes & Design | UI/UX documentation |
+| Team Members | Roles and responsibilities |
+| Milestones | Project timeline |
+| Getting Started | Setup instructions |
+| Contributing | How to contribute |
+| Status | Current project progress |
+
 ### Three-Tier Architecture
