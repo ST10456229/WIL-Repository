@@ -261,10 +261,169 @@ The owner of ChowDown struggles to attract and retain customers without a define
    git clone [https://github.com/YourUsername/ChowDown-Cafe.git](https://github.com/YourUsername/ChowDown-Cafe.git)
    cd ChowDown-Cafe
 
-Database Setup:Start Apache & MySQL via XAMPP Control Panel.Open phpMyAdmin (http://localhost/phpmyadmin).Create database chowdown_db and import database/schema.sql.Configure Environment:Bashcp .env.example .env
-#Update .env with your local MySQL credentials
-Run Admin Panel:Move the repository to your server root (e.g., htdocs/chowdown-cafe).Navigate to http://localhost/chowdown-cafe/admin-panel/.Run Mobile App:Open /mobile-app in Android Studio.Link your google-services.json file for Firebase.Build and run on an Android Virtual Device (AVD).Docker DeploymentBashdocker-compose up -d --build
+   
+## 🗄️ Database Setup
 
-#📊 StatusComponentStatusProject Charter & Planning✅ CompleteRequirements Specification✅ CompleteArchitecture & DB Design✅ CompleteUI/UX Wireframes✅ CompleteCI/CD Pipeline🔄 In ProgressWeb Admin Front-end🔄 In ProgressAndroid Application📅 PlannedREST API Services📅 Planned🤝 ContributingFork the Project Repository.Create your Feature Branch (git checkout -b feature/AmazingFeature).Commit your Changes (git commit -m 'Add some AmazingFeature').Push to the Branch (git push origin feature/AmazingFeature).Open a Pull Request.
+### 1. Start XAMPP
 
-#📄 License & ReferencesDeveloped for the Work Integrated Learning (WIL) program at Rosebank College.ReferencesBennett, S., McRobb, S. and Farmer, R. (2010). Object-Oriented Systems Analysis and Design Using UML. 4th edn. McGraw-Hill.Firebase Documentation. (2023). Available at: firebase.google.com/docs© 2026 Team Amajongo — Rosebank College WIL Project
+Open the **XAMPP Control Panel** and start:
+
+* Apache
+* MySQL
+
+### 2. Open phpMyAdmin
+
+Navigate to:
+
+```text
+http://localhost/phpmyadmin
+```
+
+### 3. Create the Database
+
+Create a new database named:
+
+```text
+chowdown_db
+```
+
+Then import the database schema:
+
+```text
+database/schema.sql
+```
+
+---
+
+## ⚙️ Environment Configuration
+
+Copy the example environment file:
+
+```bash
+cp .env.example .env
+```
+
+Update the `.env` file with your local MySQL credentials:
+
+```env
+DB_HOST=localhost
+DB_NAME=chowdown_db
+DB_USER=your_username
+DB_PASSWORD=your_password
+```
+
+> **Note:** Do not commit your `.env` file to GitHub. Keep sensitive credentials private.
+
+---
+
+## 🌐 Running the Admin Panel
+
+### 1. Move the Repository
+
+Place the project inside your local server root directory.
+
+For XAMPP:
+
+```text
+htdocs/chowdown-cafe
+```
+
+### 2. Access the Admin Panel
+
+Open your browser and navigate to:
+
+```text
+http://localhost/chowdown-cafe/admin-panel/
+```
+
+---
+
+## 📱 Running the Mobile Application
+
+1. Open the `/mobile-app` directory in **Android Studio**.
+2. Configure Firebase for the application.
+3. Add your `google-services.json` file to the appropriate Android app directory.
+4. Sync the Gradle project.
+5. Build the application.
+6. Run it using an **Android Virtual Device (AVD)** or a physical Android device.
+
+> **Note:** The `google-services.json` file contains Firebase project configuration and should be handled appropriately for your project's security requirements.
+
+---
+
+## 🐳 Docker Deployment
+
+To build and start the application using Docker:
+
+```bash
+docker-compose up -d --build
+```
+
+To verify running containers:
+
+```bash
+docker ps
+```
+
+---
+
+## 📊 Project Status
+
+| Component                  |     Status     |
+| -------------------------- | :------------: |
+| Project Charter & Planning |   ✅ Complete   |
+| Requirements Specification |   ✅ Complete   |
+| Architecture & DB Design   |   ✅ Complete   |
+| UI/UX Wireframes           |   ✅ Complete   |
+| CI/CD Pipeline             | 🔄 In Progress |
+| Web Admin Front-end        | 🔄 In Progress |
+| Android Application        |   📅 Planned   |
+| REST API Services          |   📅 Planned   |
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome.
+
+### Contribution Workflow
+
+1. **Fork** the project repository.
+2. Create a feature branch:
+
+```bash
+git checkout -b feature/AmazingFeature
+```
+
+3. Commit your changes:
+
+```bash
+git commit -m "Add some AmazingFeature"
+```
+
+4. Push the branch:
+
+```bash
+git push origin feature/AmazingFeature
+```
+
+5. Open a **Pull Request**.
+
+---
+
+## 📄 License & References
+
+### License
+
+This project was developed as part of the **Work Integrated Learning (WIL) program at Rosebank College**.
+
+### References
+
+* Bennett, S., McRobb, S. and Farmer, R. (2010). *Object-Oriented Systems Analysis and Design Using UML*. 4th edn. McGraw-Hill.
+* Firebase Documentation. (2023). Available at: `https://firebase.google.com/docs`
+
+---
+
+<p align="center">
+  © 2026 <strong>Team Amajongo</strong> — Rosebank College WIL Project
+</p>
