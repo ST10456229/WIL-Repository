@@ -177,12 +177,6 @@ The owner of ChowDown struggles to attract and retain customers without a define
 | `notifications` | Auto UID | Push notification logs |
 | `customer_notifications` | Auto UID | Junction mapping customer notification history |
 
-### 📐 Entity Relationship Diagram (ERD)
-
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" alt="ChowDown Cafe ERD Diagram" width="80%" />
-</div>
-
 ---
 
 ## 🎨 Wireframes & Design
@@ -260,3 +254,8 @@ The owner of ChowDown struggles to attract and retain customers without a define
    ```bash
    git clone [https://github.com/YourUsername/ChowDown-Cafe.git](https://github.com/YourUsername/ChowDown-Cafe.git)
    cd ChowDown-Cafe
+
+Database Setup:Start Apache & MySQL via XAMPP Control Panel.Open phpMyAdmin (http://localhost/phpmyadmin).Create database chowdown_db and import database/schema.sql.Configure Environment:Bashcp .env.example .env
+# Update .env with your local MySQL credentials
+Run Admin Panel:Move the repository to your server root (e.g., htdocs/chowdown-cafe).Navigate to http://localhost/chowdown-cafe/admin-panel/.Run Mobile App:Open /mobile-app in Android Studio.Link your google-services.json file for Firebase.Build and run on an Android Virtual Device (AVD).Docker DeploymentBashdocker-compose up -d --build
+📊 StatusComponentStatusProject Charter & Planning✅ CompleteRequirements Specification✅ CompleteArchitecture & DB Design✅ CompleteUI/UX Wireframes✅ CompleteCI/CD Pipeline🔄 In ProgressWeb Admin Front-end🔄 In ProgressAndroid Application📅 PlannedREST API Services📅 Planned🤝 ContributingFork the Project Repository.Create your Feature Branch (git checkout -b feature/AmazingFeature).Commit your Changes (git commit -m 'Add some AmazingFeature').Push to the Branch (git push origin feature/AmazingFeature).Open a Pull Request.📄 License & ReferencesDeveloped for the Work Integrated Learning (WIL) program at Rosebank College.ReferencesBennett, S., McRobb, S. and Farmer, R. (2010). Object-Oriented Systems Analysis and Design Using UML. 4th edn. McGraw-Hill.Firebase Documentation. (2023). Available at: firebase.google.com/docs© 2026 Team Amajongo — Rosebank College WIL Project
