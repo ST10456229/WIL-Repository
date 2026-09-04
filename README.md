@@ -90,9 +90,6 @@ The owner of ChowDown finds it difficult to attract new clients and retain curre
 
 ---
 
-## 🏗️ System Architecture
-
----
 
 ## 💻 Technology Stack
 
@@ -138,10 +135,6 @@ The owner of ChowDown finds it difficult to attract new clients and retain curre
 
 ---
 
-## 🚀 DevOps Pipeline
-
-### CI/CD Workflow
-
 
 ### DevOps KPIs
 
@@ -179,14 +172,9 @@ The owner of ChowDown finds it difficult to attract new clients and retain curre
 | `notifications` | Auto UID | Push notification records |
 | `customer_notifications` | Auto UID | Junction: tracks which customers received which notifications |
 
-### ERD Summary
-
 
 ---
 
-## 📁 Project Structure
-
----
 
 ## 🎨 Wireframes & Design
 
@@ -225,10 +213,14 @@ All wireframes were created using **Figma** and **Draw.io**.
 
 | Name | Student Number | Role | Responsibilities |
 |------|----------------|------|------------------|
-| Wandile Shobede | ST10457381 | Team Leader / Mobile Support | Managing project lifespan, team discussions, quality standards, primary stakeholder contact |
-| Siphamandla Tshabalala | ST10441479 | Project Manager / Mobile App Lead | Note-taking, documentation, meeting coordination, presentations |
-| Mlondolozi Shezi | ST10458040 | Backend Lead / Mobile Support | Database structure, backend functionality, data protection, API development |
-| Sphumelele Khuzwayo | ST10456229 | Database Designer / Mobile Support | User features, backend API integration, code reviews, responsive design |
+| Wandile Shobede | ST10457381 | Team Leader / Mobile Support | Managing project lifespan, team discussions, quality standards, primary stakeholder contact | <img width="184" height="245" alt="image" src="https://github.com/user-attachments/assets/b49cd6ce-7d17-4ee0-b466-4eeb5b654843" />
+
+| Siphamandla Tshabalala | ST10441479 | Project Manager / Mobile App Lead | Note-taking, documentation, meeting coordination, presentations | <img width="246" height="177" alt="image" src="https://github.com/user-attachments/assets/10f3e91e-0ec9-4c09-b839-f9bb3262cef5" />
+
+| Mlondolozi Shezi | ST10458040 | Backend Lead / Mobile Support | Database structure, backend functionality, data protection, API development | <img width="137" height="183" alt="image" src="https://github.com/user-attachments/assets/078194d8-e2ee-439a-9cf7-1f7163ebfee1" />
+
+| Sphumelele Khuzwayo | ST10456229 | Database Designer / Mobile Support | User features, backend API integration, code reviews, responsive design | <img width="164" height="219" alt="image" src="https://github.com/user-attachments/assets/66fb469a-6d67-4bb3-bf1c-36b137be9647" />
+
 
 ### Team Allocation by Task
 
@@ -283,7 +275,36 @@ All wireframes were created using **Figma** and **Draw.io**.
    ```bash
    git clone https://github.com/YourUsername/ChowDown-Cafe.git
    cd ChowDown-Cafe
-   🤝 Contributing
+Set up the database:
+
+Start XAMPP (Apache and MySQL)
+
+Import database/schema.sql into phpMyAdmin
+
+Configure environment:
+
+Copy .env.example to .env
+
+Update database credentials
+
+Start the application:
+
+Place the admin-panel folder in XAMPP's htdocs
+
+Access at http://localhost/chowdown-cafe/admin-panel/
+
+Mobile app (Android Studio):
+
+Open project in Android Studio
+
+Configure Firebase
+
+Run on emulator or physical device
+
+---
+   
+##🤝 Contributing
+
 Fork the repository
 
 Create a feature branch (git checkout -b feature/amazing-feature)
@@ -307,7 +328,7 @@ This project is developed as part of the Work Integrated Learning (WIL) program 
 📞 Contact
 Project Supervisor: Asande Zikalala
 
-Team Email: wil.team@chowdown.com
+Team Email: ST10457381@rcconnect.edu.za
 
 Client: Mr Ibrahim - ChowDown Café, Durban CBD
 
@@ -365,5 +386,3 @@ text
 | Getting Started | Setup instructions |
 | Contributing | How to contribute |
 | Status | Current project progress |
-
-### Three-Tier Architecture
