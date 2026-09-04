@@ -92,4 +92,54 @@ The owner of ChowDown finds it difficult to attract new clients and retain curre
 
 ## 🏗️ System Architecture
 
+---
+
+## 💻 Technology Stack
+
+### Programming Languages
+
+| Language | Purpose |
+|----------|---------|
+| PHP 8.x | Backend development (admin panel & API) |
+| Kotlin 1.9.x | Android mobile application |
+| HTML/CSS/JavaScript | Frontend web development |
+| SQL | Database management |
+
+### Development Tools
+
+| Tool | Purpose |
+|------|---------|
+| Android Studio | Mobile app development |
+| Visual Studio Code | PHP development |
+| MySQL Workbench | Database design |
+| Figma | UI prototyping |
+| Postman | API testing |
+
+### DevOps Tools
+
+| Tool | Purpose |
+|------|---------|
+| GitHub | Version control & collaboration |
+| GitHub Actions | CI/CD pipeline automation |
+| Docker | Application containerization |
+| Docker Compose | Multi-container orchestration |
+| SonarQube | Static code analysis |
+| Snyk | Dependency vulnerability scanning |
+| Prometheus & Grafana | Monitoring and metrics |
+
+### Frameworks & Services
+
+| Framework/Service | Purpose |
+|-------------------|---------|
+| XAMPP | Local PHP/MySQL server |
+| Firebase Firestore | NoSQL document store |
+| Firebase Cloud Messaging | Push notifications |
+| Chart.js | Web charts |
+
+---
+
+## 🚀 DevOps Pipeline
+
+### CI/CD Workflow
+
 ### Three-Tier Architecture
