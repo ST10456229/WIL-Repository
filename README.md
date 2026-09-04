@@ -215,9 +215,7 @@ All wireframes were created using **Figma** and **Draw.io**.
 |------|----------------|------|------------------|
 | Wandile Shobede| ST10457381 | Team Leader / Mobile Support | Managing project lifespan, team discussions, quality standards, primary stakeholder contact | 
 | Siphamandla Tshabalala| ST10441479 | Project Manager / Mobile App Lead | Note-taking, documentation, meeting coordination, presentations | 
-
 | Mlondolozi Shezi| ST10458040 | Backend Lead / Mobile Support | Database structure, backend functionality, data protection, API development | 
-
 | Sphumelele Khuzwayo| ST10456229 | Database Designer / Mobile Support | User features, backend API integration, code reviews, responsive design | 
 
 
