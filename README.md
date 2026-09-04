@@ -1,5 +1,4 @@
-# <img width="282" height="179" alt="chowd" src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" />
- ChowDown Café - Digital Marketing & Operations Platform
+# <img width="282" height="179" alt="chowd" src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" /> ChowDown Café - Digital Marketing & Operations Platform
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
 ![PHP](https://img.shields.io/badge/PHP-8.x-777BB4?logo=php)
 ![Kotlin](https://img.shields.io/badge/Kotlin-1.9.x-7F52FF?logo=kotlin)
