@@ -130,7 +130,7 @@ https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe
 <br> <b>Checkout</b> </td> </tr> <tr> <td align="center"> <img width="290" height="847" alt="image" src="https://github.com/user-attachments/assets/f57d8a8c-28bb-414b-b612-94364e5bbbd5" />
 <br> <b>Confirmation</b> </td> <td align="center"> <img width="243" height="769" alt="image" src="https://github.com/user-attachments/assets/f192b80e-54dd-4e10-a623-1493d118e251" />
 <br> <b>Order Tracking</b> </td> <td align="center"><img width="184" height="703" alt="image" src="https://github.com/user-attachments/assets/5706bd78-dcd7-4056-859d-bd01ee32bd7c" />
-<br> <b>Settings</b> </td> <td align="center"> ![Uploading image.png…]()
+<br> <b>Settings</b> </td> <td align="center"> <img width="184" height="703" alt="image" src="https://github.com/user-attachments/assets/cfadd214-8321-4026-924e-aad587db9305" />
 </tr> </table> </div>
 Design Tool
 All wireframes were created using Figma and Draw.io.
