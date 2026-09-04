@@ -339,18 +339,26 @@ Oracle. (2019). Oracle Database Documentation. Available at: https://docs.oracle
 📊 Status
 Component	Status
 Project Plan	✅ Complete
+--
 Requirements Analysis	✅ Complete
+--
 System Design	✅ Complete
+--
 Wireframes	✅ Complete
+--
 ERD Design	✅ Complete
+--
 DevOps Pipeline	🔄 In Progress
+--
 HTML Pages	🔄 In Progress
+--
 Mobile App	📅 Planned
+--
 Backend API	📅 Planned
+--
 Testing	📅 Planned
+--
 © 2026 Amajongo - Rosebank College WIL Project
-
-text
 
 ---
 
