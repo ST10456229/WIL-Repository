@@ -8,15 +8,12 @@ ChowDown Café - Digital Marketing & Operations Platform
 
 🛠️ Solution Overview
 
-🏗️ System Architecture
 
 💻 Technology Stack
 
-🚀 DevOps Pipeline
 
 🗄️ Database Design
 
-📁 Project Structure
 
 🎨 Wireframes & Design
 
@@ -54,45 +51,7 @@ The owner of ChowDown finds it difficult to attract new clients and retain curre
 <div align="center"> <table> <tr> <th width="33%">🌐 Admin Panel (Web)</th> <th width="33%">📱 Customer App (Android)</th> <th width="34%">🗄️ Shared Database</th> </tr> <tr> <td> • Secure login system<br> • Dashboard with analytics<br> • Marketing post management<br> • Stock management<br> • Staff management<br> • Report generation<br> • Supplier management </td> <td> • Splash screen & onboarding<br> • Browse promotions<br> • Place orders for pickup<br> • Real-time order tracking<br> • Push notifications<br> • Contact business<br> • Settings management </td> <td> <b>MySQL (XAMPP)</b><br> • admins<br> • staff<br> • products<br> • orders<br> • marketing_posts<br> <br> <b>Firebase Firestore</b><br> • customers<br> • notifications </td> </tr> </table> </div>
 📊 Value Added
 <table align="center"> <tr> <th>Benefit</th> <th>Impact</th> </tr> <tr> <td>💰 Increased Revenue</td> <td>10+ additional daily orders</td> </tr> <tr> <td>📉 Reduced Waste</td> <td>5% reduction in stock spoilage</td> </tr> <tr> <td>📢 Better Marketing</td> <td>Direct customer engagement via app</td> </tr> <tr> <td>⏱️ Time Savings</td> <td>2 hours/day saved for staff</td> </tr> <tr> <td>📈 ROI</td> <td>243% return on investment</td> </tr> </table><hr>
-🏗️ System Architecture
-Three-Tier Architecture
-text
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                        THREE-TIER ARCHITECTURE                             │
-├─────────────────────────────────────────────────────────────────────────────┤
-│                                                                             │
-│  ┌─────────────────────────────────────────────────────────────────────┐   │
-│  │                    PRESENTATION LAYER (Frontend)                    │   │
-│  │                                                                     │   │
-│  │     ┌─────────────────────┐    ┌─────────────────────────────────┐ │   │
-│  │     │   Web Admin Panel   │    │      Android App (Kotlin)       │ │   │
-│  │     │   (PHP/HTML/CSS)    │    │      (XML Layouts)             │ │   │
-│  │     └─────────────────────┘    └─────────────────────────────────┘ │   │
-│  └─────────────────────────────────────────────────────────────────────┘   │
-│                                    │                                       │
-│                                    ▼                                       │
-│  ┌─────────────────────────────────────────────────────────────────────┐   │
-│  │                    APPLICATION LOGIC LAYER (Backend)               │   │
-│  │                                                                     │   │
-│  │     ┌─────────────────────┐    ┌─────────────────────────────────┐ │   │
-│  │     │   PHP Controllers   │    │   Firebase Cloud Functions     │ │   │
-│  │     │   REST API          │    │                                │ │   │
-│  │     └─────────────────────┘    └─────────────────────────────────┘ │   │
-│  └─────────────────────────────────────────────────────────────────────┘   │
-│                                    │                                       │
-│                                    ▼                                       │
-│  ┌─────────────────────────────────────────────────────────────────────┐   │
-│  │                        DATA LAYER (Database)                       │   │
-│  │                                                                     │   │
-│  │     ┌─────────────────────┐    ┌─────────────────────────────────┐ │   │
-│  │     │   MySQL (XAMPP)     │    │   Firebase Firestore           │ │   │
-│  │     │   - Business Data   │    │   - Customer Profiles          │ │   │
-│  │     │   - Stock/Orders    │    │   - Notifications              │ │   │
-│  │     └─────────────────────┘    └─────────────────────────────────┘ │   │
-│  └─────────────────────────────────────────────────────────────────────┘   │
-│                                                                             │
-└─────────────────────────────────────────────────────────────────────────────┘
-<hr>
+
 💻 Technology Stack
 Programming Languages
 Language	Purpose	Version
@@ -123,37 +82,6 @@ Firebase Firestore	NoSQL document store
 Firebase Cloud Messaging	Push notifications
 Chart.js	Web charts
 <hr>
-🚀 DevOps Pipeline
-CI/CD Workflow
-text
-┌─────────────────────────────────────────────────────────────────────────────────────┐
-│                              CI/CD PIPELINE (GitHub Actions)                        │
-├─────────────────────────────────────────────────────────────────────────────────────┤
-│                                                                                     │
-│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐    ┌──────────────────┐ │
-│  │   CODE       │───▶│   BUILD      │───▶│   TEST       │───▶│   STATIC         │ │
-│  │   COMMIT     │    │   (PHP/      │    │   (Unit/     │    │   ANALYSIS       │ │
-│  │              │    │    Kotlin)   │    │   Integration│    │   (SonarQube)    │ │
-│  └──────────────┘    └──────────────┘    └──────────────┘    └────────┬─────────┘ │
-│                                                                         │           │
-│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐    ┌────────┴─────────┐ │
-│  │   SECURITY   │◀───│   CONTAINER  │◀───│   DEPLOY     │◀───│   PACKAGE        │ │
-│  │   SCAN       │    │   BUILD      │    │   (Staging)  │    │                  │ │
-│  │   (Snyk)     │    │   (Docker)   │    │              │    │                  │ │
-│  └──────────────┘    └──────────────┘    └──────────────┘    └────────┬─────────┘ │
-│                                                                         │           │
-│                                                                         ▼           │
-│                                                              ┌──────────────────┐ │
-│                                                              │   DEPLOY         │ │
-│                                                              │   (Production)   │ │
-│                                                              └──────────────────┘ │
-│                                                                                     │
-│  ┌──────────────┐                                                                  │
-│  │  MONITORING  │◀─────────────────────────────────────────────────────────────────│
-│  │  (Prometheus │                                                                  │
-│  │   + Grafana) │                                                                  │
-│  └──────────────┘                                                                  │
-└─────────────────────────────────────────────────────────────────────────────────────┘
 DevOps KPIs
 KPI	Target
 Build Time	< 5 minutes
@@ -182,48 +110,6 @@ customer_notifications	Auto UID	Junction: tracks which customers received which 
 ERD Diagram
 https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe
 
-<hr>
-📁 Project Structure
-bash
-chowdown-cafe/
-├── 📄 README.md
-├── 📁 admin-panel/               # Web Admin Panel
-│   ├── 📄 index.html             # Login page
-│   ├── 📄 dashboard.html         # Admin dashboard
-│   ├── 📄 stock.html             # Stock management
-│   ├── 📄 reports.html           # Reports page
-│   ├── 📄 promotions.html        # Promotions management
-│   ├── 📄 suppliers.html         # Supplier management
-│   ├── 📁 css/
-│   │   └── 📄 style.css
-│   ├── 📁 js/
-│   │   └── 📄 script.js
-│   └── 📁 assets/
-│       └── 📁 images/
-├── 📁 mobile-app/                # Kotlin Android App
-│   └── 📄 (Figma prototype)
-├── 📁 backend/                   # PHP Backend
-│   ├── 📁 api/
-│   │   ├── 📄 auth.php
-│   │   ├── 📄 posts.php
-│   │   ├── 📄 stock.php
-│   │   ├── 📄 orders.php
-│   │   └── 📄 reports.php
-│   ├── 📁 config/
-│   │   └── 📄 database.php
-│   └── 📁 models/
-├── 📁 database/                  # Database Scripts
-│   ├── 📄 schema.sql
-│   └── 📁 migrations/
-├── 📁 docker/                    # Docker Configuration
-│   ├── 📄 Dockerfile
-│   └── 📄 docker-compose.yml
-├── 📁 docs/                      # Documentation
-│   ├── 📄 WIL_Task1_Submission.docx
-│   └── 📁 wireframes/
-└── 📁 .github/                   # GitHub Actions
-    └── 📁 workflows/
-        └── 📄 ci.yml
 <hr>
 🎨 Wireframes & Design
 🌐 Website Wireframes
