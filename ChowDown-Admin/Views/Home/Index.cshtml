@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div style="text-align: center; padding: 4rem 0;">
+   
+    <img src="~/images/chowdown.jpg" alt="Chow Down" style="height: 120px; margin-bottom: 1.5rem;" />
+    <h1 style="font-size: 3rem; background: linear-gradient(135deg, #f5f0e8 0%, #e63946 80%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+        CHOW DOWN
+    </h1>
+    <p style="color: #999; font-size: 1.2rem;">Admin Panel</p>
+    <div style="margin-top: 2rem;">
+        <a asp-controller="Admin" asp-action="Dashboard" class="btn">
+            <i class="fas fa-sign-in-alt"></i> Go to Dashboard
+        </a>
+        <a asp-controller="Admin" asp-action="Login" class="btn btn-outline" style="margin-left: 1rem;">
+            <i class="fas fa-lock"></i> Login
+        </a>
+    </div>
+</div>

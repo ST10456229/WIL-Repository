@@ -1,0 +1,80 @@
+﻿@{
+    ViewData["Title"] = "Dashboard - Admin";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 style="margin-bottom: 1.5rem;"><i class="fas fa-chart-pie"></i> Admin Dashboard</h2>
+
+
+<div class="stats-row">
+    <div class="stat">
+        <span class="value">156</span>
+        <span class="label">Total Orders</span>
+    </div>
+    <div class="stat">
+        <span class="value">R 42,850</span>
+        <span class="label">Revenue</span>
+    </div>
+    <div class="stat">
+        <span class="value" style="color:#e63946;">8</span>
+        <span class="label">Low Stock Items</span>
+    </div>
+    <div class="stat">
+        <span class="value" style="color:#28a745;">12</span>
+        <span class="label">Active Customers</span>
+    </div>
+</div>
+
+
+<div style="display: flex; gap: 1rem; flex-wrap: wrap; margin: 1.5rem 0;">
+    <a asp-controller="Admin" asp-action="StockEntry" class="btn">
+        <i class="fas fa-plus"></i> Add New Stock
+    </a>
+    <a asp-controller="Admin" asp-action="Promotions" class="btn btn-outline">
+        <i class="fas fa-bullhorn"></i> Create Promotion
+    </a>
+    <a asp-controller="Admin" asp-action="Reports" class="btn btn-outline">
+        <i class="fas fa-file-alt"></i> View Reports
+    </a>
+</div>
+
+>
+<div class="card" style="margin-top: 1.5rem;">
+    <h4 style="margin-bottom: 1rem;"><i class="fas fa-clock"></i> Recent Orders</h4>
+    <div class="table-wrap">
+        <table>
+            <thead>
+                <tr>
+                    <th>Order #</th>
+                    <th>Customer</th>
+                    <th>Items</th>
+                    <th>Total</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>#ORD-001</td>
+                    <td>John D.</td>
+                    <td>3 items</td>
+                    <td>R 245.00</td>
+                    <td><span style="color:#ffc107;">⏳ Preparing</span></td>
+                </tr>
+                <tr>
+                    <td>#ORD-002</td>
+                    <td>Sarah M.</td>
+                    <td>2 items</td>
+                    <td>R 180.00</td>
+                    <td><span style="color:#28a745;">✅ Ready</span></td>
+                </tr>
+                <tr>
+                    <td>#ORD-003</td>
+                    <td>Mike R.</td>
+                    <td>1 item</td>
+                    <td>R 95.00</td>
+                    <td><span style="color:#6c757d;">📦 Completed</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

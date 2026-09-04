@@ -1,0 +1,94 @@
+﻿@{
+    ViewData["Title"] = "Inventory - Admin";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 style="margin-bottom: 1rem;"><i class="fas fa-boxes"></i> Inventory Management</h2>
+
+
+<div class="stats-row">
+    <div class="stat">
+        <span class="value">R 42,850.00</span>
+        <span class="label">TOTAL VALUE</span>
+    </div>
+    <div class="stat">
+        <span class="value" style="color:#e63946;">08</span>
+        <span class="label">LOW STOCK ITEMS</span>
+    </div>
+</div>
+
+
+<div class="ledger-toolbar">
+    <div class="search-box">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="SEARCH INVENTORY..." />
+    </div>
+    <div class="actions">
+        <a asp-controller="Admin" asp-action="StockEntry" class="btn btn-outline btn-sm">
+            <i class="fas fa-plus"></i> NEW ITEM
+        </a>
+        <button class="btn btn-sm"><i class="fas fa-file-export"></i> EXPORT CSV</button>
+    </div>
+</div>
+
+
+<div class="table-wrap">
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>ITEM NAME</th>
+                <th>CATEGORY</th>
+                <th>PRICE (UNIT)</th>
+                <th>STOCK</th>
+                <th>ACTIONS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>#CD-0012</td>
+                <td>Boerewors Rolls (Bulk)</td>
+                <td>PROTEINS</td>
+                <td>R 450.00</td>
+                <td>48</td>
+                <td class="actions-icon">
+                    <i class="fas fa-edit"></i>
+                    <i class="fas fa-trash-alt"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>#CD-0045</td>
+                <td>Pre-Pack Frozen Wingz</td>
+                <td>FROZEN</td>
+                <td>R 120.00</td>
+                <td class="stock-low">04</td>
+                <td class="actions-icon">
+                    <i class="fas fa-edit"></i>
+                    <i class="fas fa-trash-alt"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>#CD-0089</td>
+                <td>Chow Down Secret Sauce (5L)</td>
+                <td>CONDIMENTS</td>
+                <td>R 285.00</td>
+                <td>12</td>
+                <td class="actions-icon">
+                    <i class="fas fa-edit"></i>
+                    <i class="fas fa-trash-alt"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>#CD-0021</td>
+                <td>Pap Mix 10kg</td>
+                <td>STAPLES</td>
+                <td>R 185.00</td>
+                <td>07</td>
+                <td class="actions-icon">
+                    <i class="fas fa-edit"></i>
+                    <i class="fas fa-trash-alt"></i>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

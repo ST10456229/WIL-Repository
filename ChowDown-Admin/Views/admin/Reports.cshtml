@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Reports - Admin";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 style="margin-bottom: 1rem;"><i class="fas fa-file-alt"></i> Reports</h2>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 1.5rem 0;">
+    <div class="card" style="text-align: center;">
+        <i class="fas fa-chart-line" style="font-size: 2rem; color: #e63946;"></i>
+        <h4>Daily Sales</h4>
+        <p style="color: #999;">View today's sales summary</p>
+        <button class="btn btn-sm">Generate</button>
+    </div>
+    <div class="card" style="text-align: center;">
+        <i class="fas fa-boxes" style="font-size: 2rem; color: #e63946;"></i>
+        <h4>Stock Report</h4>
+        <p style="color: #999;">Inventory utilization report</p>
+        <button class="btn btn-sm">Generate</button>
+    </div>
+    <div class="card" style="text-align: center;">
+        <i class="fas fa-users" style="font-size: 2rem; color: #e63946;"></i>
+        <h4>Customer Report</h4>
+        <p style="color: #999;">Customer sign-ups & stats</p>
+        <button class="btn btn-sm">Generate</button>
+    </div>
+    <div class="card" style="text-align: center;">
+        <i class="fas fa-bullhorn" style="font-size: 2rem; color: #e63946;"></i>
+        <h4>Promotion Report</h4>
+        <p style="color: #999;">Post views & engagement</p>
+        <button class="btn btn-sm">Generate</button>
+    </div>
+</div>

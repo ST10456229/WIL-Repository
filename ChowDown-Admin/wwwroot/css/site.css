@@ -1,0 +1,667 @@
+/* ============================================
+   CHOW DOWN CUSTOM STYLES
+   (Keep these at the top)
+   ============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0b0b0b;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #f5f0e8;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+    /* Override default margin */
+}
+
+.container {
+    max-width: 1300px;
+    width: 100%;
+}
+
+/* ----- global components ----- */
+.badge {
+    background: #e63946;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    letter-spacing: 0.3px;
+}
+
+.btn {
+    border: none;
+    background: #e63946;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.6rem 1.8rem;
+    border-radius: 40px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+    letter-spacing: 0.3px;
+    box-shadow: 0 4px 10px rgba(230, 57, 70, 0.3);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+    .btn:hover {
+        background: #c5303f;
+        transform: scale(1.02);
+    }
+
+.btn-outline {
+    background: transparent;
+    border: 1.5px solid #e63946;
+    box-shadow: none;
+    color: #f5f0e8;
+}
+
+    .btn-outline:hover {
+        background: #e63946;
+        color: white;
+    }
+
+    .btn-outline i {
+        color: #e63946;
+    }
+
+    .btn-outline:hover i {
+        color: white;
+    }
+
+.btn-sm {
+    padding: 0.4rem 1.2rem;
+    font-size: 0.8rem;
+}
+
+.card {
+    background: #171717;
+    border-radius: 24px;
+    padding: 1.5rem 1.8rem;
+    border: 1px solid #2a2a2a;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    background: #1e1e1e;
+    border-radius: 60px;
+    padding: 0.2rem 0.2rem 0.2rem 1.5rem;
+    border: 1px solid #333;
+}
+
+    .input-group input {
+        background: transparent;
+        border: none;
+        padding: 0.8rem 0;
+        color: #f5f0e8;
+        font-size: 0.95rem;
+        flex: 1;
+        min-width: 140px;
+        outline: none;
+    }
+
+        .input-group input::placeholder {
+            color: #777;
+            font-weight: 300;
+        }
+
+    .input-group .btn {
+        border-radius: 40px;
+        padding: 0.6rem 1.8rem;
+    }
+
+/* ----- header / nav ----- */
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid #262626;
+    padding-bottom: 1.2rem;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    background: linear-gradient(135deg, #f5f0e8 0%, #e63946 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem 2.5rem;
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: #b0b0b0;
+}
+
+    .nav-links a {
+        color: #b0b0b0;
+        text-decoration: none;
+        transition: 0.2s;
+        cursor: pointer;
+    }
+
+        .nav-links a:hover {
+            color: #f5f0e8;
+        }
+
+.order-now {
+    background: #e63946;
+    color: white;
+    padding: 0.4rem 1.5rem;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+/* ----- hero / newsletter (UI2) ----- */
+.hero-newsletter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: #141414;
+    border-radius: 40px;
+    padding: 2rem 2.5rem;
+    margin-bottom: 3rem;
+    border: 1px solid #282828;
+}
+
+    .hero-newsletter h2 {
+        font-size: 1.6rem;
+        font-weight: 600;
+        letter-spacing: -0.3px;
+        max-width: 500px;
+    }
+
+        .hero-newsletter h2 i {
+            color: #e63946;
+            margin-right: 8px;
+        }
+
+    .hero-newsletter .input-group {
+        background: #1e1e1e;
+        border: 1px solid #3a3a3a;
+        min-width: 280px;
+    }
+
+        .hero-newsletter .input-group input {
+            padding: 0.7rem 0;
+        }
+
+/* ----- STAFF ACCESS (UI3) ----- */
+.staff-access {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #121212;
+    border-radius: 40px;
+    padding: 2.5rem 2rem;
+    margin: 2.5rem 0;
+    border: 1px solid #2a2a2a;
+}
+
+    .staff-access h3 {
+        font-weight: 300;
+        letter-spacing: 3px;
+        font-size: 0.9rem;
+        color: #aaa;
+        margin-bottom: 0.25rem;
+    }
+
+    .staff-access h1 {
+        font-size: 2.8rem;
+        font-weight: 700;
+        margin-bottom: 0.2rem;
+    }
+
+    .staff-access .sub {
+        color: #aaa;
+        margin-bottom: 1.8rem;
+        font-size: 1rem;
+    }
+
+.staff-form {
+    width: 100%;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+    .staff-form .field {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+
+        .staff-form .field label {
+            font-size: 0.7rem;
+            letter-spacing: 1px;
+            color: #aaa;
+            font-weight: 500;
+        }
+
+        .staff-form .field input {
+            background: #1c1c1c;
+            border: 1px solid #333;
+            border-radius: 40px;
+            padding: 0.8rem 1.5rem;
+            color: #f5f0e8;
+            font-size: 0.95rem;
+            outline: none;
+        }
+
+            .staff-form .field input::placeholder {
+                color: #555;
+            }
+
+    .staff-form .actions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0.5rem;
+    }
+
+        .staff-form .actions .forgot {
+            color: #888;
+            font-size: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            cursor: pointer;
+        }
+
+            .staff-form .actions .forgot i {
+                color: #e63946;
+            }
+
+.staff-footer {
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+    font-size: 0.75rem;
+    color: #666;
+}
+
+/* ----- INVENTORY LEDGER (UI5) ----- */
+.ledger-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2.5rem 0 1rem;
+}
+
+    .ledger-header h2 {
+        font-weight: 600;
+        font-size: 1.8rem;
+    }
+
+    .ledger-header .sub {
+        color: #999;
+        font-size: 0.9rem;
+    }
+
+.stats-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem 4rem;
+    background: #151515;
+    padding: 1.2rem 2rem;
+    border-radius: 40px;
+    margin-bottom: 1.8rem;
+    border: 1px solid #262626;
+}
+
+    .stats-row .stat {
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
+    }
+
+        .stats-row .stat .value {
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .stats-row .stat .label {
+            color: #999;
+            font-size: 0.9rem;
+        }
+
+.ledger-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    gap: 1rem;
+}
+
+    .ledger-toolbar .search-box {
+        background: #1a1a1a;
+        border-radius: 40px;
+        padding: 0.3rem 1.2rem;
+        border: 1px solid #333;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+        .ledger-toolbar .search-box i {
+            color: #777;
+        }
+
+        .ledger-toolbar .search-box input {
+            background: transparent;
+            border: none;
+            padding: 0.6rem 0;
+            color: #f5f0e8;
+            width: 200px;
+            outline: none;
+        }
+
+            .ledger-toolbar .search-box input::placeholder {
+                color: #555;
+            }
+
+    .ledger-toolbar .actions {
+        display: flex;
+        gap: 0.8rem;
+        flex-wrap: wrap;
+    }
+
+/* table */
+.table-wrap {
+    overflow-x: auto;
+    background: #121212;
+    border-radius: 24px;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    border: 1px solid #292929;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+th {
+    text-align: left;
+    padding: 1rem 0.5rem 0.8rem 0.5rem;
+    color: #999;
+    font-weight: 500;
+    font-size: 0.7rem;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+td {
+    padding: 1rem 0.5rem;
+    border-bottom: 1px solid #222;
+}
+
+    td .actions-icon {
+        display: flex;
+        gap: 12px;
+        color: #888;
+    }
+
+        td .actions-icon i {
+            cursor: pointer;
+        }
+
+            td .actions-icon i:hover {
+                color: #e63946;
+            }
+
+.stock-low {
+    color: #e63946;
+    font-weight: 600;
+}
+
+.ledger-footer-actions {
+    display: flex;
+    gap: 1rem;
+    margin: 1.5rem 0 1rem;
+    flex-wrap: wrap;
+}
+
+/* ----- stock entry (UI4) ----- */
+.stock-entry {
+    background: #141414;
+    border-radius: 40px;
+    padding: 2rem 2.5rem;
+    margin: 2.5rem 0;
+    border: 1px solid #2a2a2a;
+}
+
+    .stock-entry h4 {
+        font-weight: 400;
+        letter-spacing: 1px;
+        color: #aaa;
+        font-size: 0.75rem;
+    }
+
+    .stock-entry h2 {
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-bottom: 1.2rem;
+    }
+
+.stock-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.2rem 2rem;
+    margin-top: 0.5rem;
+}
+
+    .stock-form .field {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+
+        .stock-form .field label {
+            font-size: 0.7rem;
+            letter-spacing: 0.5px;
+            color: #aaa;
+        }
+
+        .stock-form .field input,
+        .stock-form .field select {
+            background: #1c1c1c;
+            border: 1px solid #333;
+            border-radius: 40px;
+            padding: 0.7rem 1.2rem;
+            color: #f5f0e8;
+            font-size: 0.9rem;
+            outline: none;
+        }
+
+            .stock-form .field input::placeholder {
+                color: #555;
+            }
+
+    .stock-form .actions-buttons {
+        display: flex;
+        gap: 1rem;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        margin-top: 0.8rem;
+    }
+
+/* ----- detail card (UI6) ----- */
+.detail-card {
+    background: #141414;
+    border-radius: 40px;
+    padding: 1.8rem 2.2rem;
+    margin: 2rem 0;
+    border: 1px solid #292929;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .detail-card .item-info {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.2rem 2.5rem;
+    }
+
+        .detail-card .item-info .tag {
+            background: #252525;
+            padding: 0.2rem 1rem;
+            border-radius: 30px;
+            font-size: 0.7rem;
+            color: #ccc;
+        }
+
+    .detail-card .live-feed {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.8rem;
+        color: #aaa;
+        font-size: 0.9rem;
+    }
+
+        .detail-card .live-feed i {
+            color: #e63946;
+            margin-right: 5px;
+        }
+
+        .detail-card .live-feed strong {
+            color: #f5f0e8;
+            font-weight: 500;
+        }
+
+/* ----- FOOTER ----- */
+.footer-mini {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #242424;
+    font-size: 0.8rem;
+    color: #888;
+}
+
+    .footer-mini .social-icons {
+        display: flex;
+        gap: 1.8rem;
+    }
+
+        .footer-mini .social-icons span {
+            cursor: pointer;
+        }
+
+            .footer-mini .social-icons span:hover {
+                color: #f5f0e8;
+            }
+
+        .footer-mini .social-icons i {
+            font-size: 1.1rem;
+            color: #aaa;
+            margin-right: 5px;
+        }
+
+/* helpers */
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.text-muted {
+    color: #888;
+}
+
+.gap-2 {
+    gap: 0.8rem;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+/* responsive */
+@media (max-width: 700px) {
+    .hero-newsletter {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1.5rem;
+    }
+
+    .staff-access h1 {
+        font-size: 2rem;
+    }
+
+    .detail-card {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1.5rem;
+    }
+
+    .footer-mini {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+        .footer-mini .social-icons {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+}
+
+/* ============================================
+   KEEP ASP.NET CORE DEFAULT STYLES (Optional)
+   ============================================ */
+
+/* You can keep these if you want Bootstrap-like helpers */
+.form-floating > .form-control-plaintext::placeholder,
+.form-floating > .form-control::placeholder {
+    color: var(--bs-secondary-color);
+    text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder,
+.form-floating > .form-control:focus::placeholder {
+    text-align: start;
+}

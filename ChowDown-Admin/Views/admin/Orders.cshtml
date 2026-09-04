@@ -1,0 +1,70 @@
+﻿@{
+    ViewData["Title"] = "Orders - Admin";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 style="margin-bottom: 1rem;"><i class="fas fa-shopping-cart"></i> Order Management</h2>
+
+<div class="ledger-toolbar">
+    <div class="search-box">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="SEARCH ORDERS..." />
+    </div>
+    <div class="actions">
+        <select style="background:#1a1a1a; border:1px solid #333; border-radius:40px; padding:0.5rem 1.2rem; color:#f5f0e8;">
+            <option>All Orders</option>
+            <option>Pending</option>
+            <option>Preparing</option>
+            <option>Ready</option>
+            <option>Completed</option>
+        </select>
+    </div>
+</div>
+
+<div class="table-wrap">
+    <table>
+        <thead>
+            <tr>
+                <th>Order #</th>
+                <th>Customer</th>
+                <th>Items</th>
+                <th>Total</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>#ORD-001</td>
+                <td>John D.</td>
+                <td>3 items</td>
+                <td>R 245.00</td>
+                <td><span style="color:#ffc107;"> Preparing</span></td>
+                <td class="actions-icon">
+                    <i class="fas fa-check" style="color:#28a745;" title="Mark Ready"></i>
+                    <i class="fas fa-times" style="color:#e63946;" title="Cancel"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>#ORD-002</td>
+                <td>Sarah M.</td>
+                <td>2 items</td>
+                <td>R 180.00</td>
+                <td><span style="color:#28a745;">Ready</span></td>
+                <td class="actions-icon">
+                    <i class="fas fa-check" style="color:#28a745;" title="Mark Completed"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>#ORD-003</td>
+                <td>Mike R.</td>
+                <td>1 item</td>
+                <td>R 95.00</td>
+                <td><span style="color:#6c757d;">Completed</span></td>
+                <td class="actions-icon">
+                    <i class="fas fa-undo" title="Reopen"></i>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

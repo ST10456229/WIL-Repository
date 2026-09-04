@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Add Stock - Admin";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 style="margin-bottom: 1rem;"><i class="fas fa-plus-circle"></i> Stock Entry</h2>
+<p style="color: #999; margin-bottom: 1.5rem;">Add new inventory items to the system</p>
+
+<div class="stock-entry">
+    <div class="stock-form">
+        <div class="field">
+            <label>PRODUCT NAME</label>
+            <input type="text" placeholder="e.g. SPICY CHICKEN FEET PRE-PACK" />
+        </div>
+        <div class="field">
+            <label>CATEGORY</label>
+            <select>
+                <option>Frozen Pre-Packs</option>
+                <option>Proteins</option>
+                <option>Condiments</option>
+                <option>Staples</option>
+                <option>Beverages</option>
+            </select>
+        </div>
+        <div class="field">
+            <label>UNIT PRICE (R)</label>
+            <input type="text" placeholder="0.00" />
+        </div>
+        <div class="field">
+            <label>INITIAL STOCK COUNT</label>
+            <input type="number" placeholder="0" />
+        </div>
+        <div class="actions-buttons">
+            <a asp-controller="Admin" asp-action="Inventory" class="btn-outline btn">
+                <i class="fas fa-times"></i> CANCEL
+            </a>
+            <button class="btn"><i class="fas fa-plus"></i> ADD TO INVENTORY</button>
+        </div>
+    </div>
+</div>
