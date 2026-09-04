@@ -213,13 +213,12 @@ All wireframes were created using **Figma** and **Draw.io**.
 
 | Name | Student Number | Role | Responsibilities |
 |------|----------------|------|------------------|
-| Wandile Shobede <img width="184" height="245" alt="image" src="https://github.com/user-attachments/assets/b49cd6ce-7d17-4ee0-b466-4eeb5b654843" />| ST10457381 | Team Leader / Mobile Support | Managing project lifespan, team discussions, quality standards, primary stakeholder contact | 
+| Wandile Shobede| ST10457381 | Team Leader / Mobile Support | Managing project lifespan, team discussions, quality standards, primary stakeholder contact | 
+| Siphamandla Tshabalala| ST10441479 | Project Manager / Mobile App Lead | Note-taking, documentation, meeting coordination, presentations | 
 
-| Siphamandla Tshabalala <img width="246" height="177" alt="image" src="https://github.com/user-attachments/assets/10f3e91e-0ec9-4c09-b839-f9bb3262cef5" />| ST10441479 | Project Manager / Mobile App Lead | Note-taking, documentation, meeting coordination, presentations | 
+| Mlondolozi Shezi| ST10458040 | Backend Lead / Mobile Support | Database structure, backend functionality, data protection, API development | 
 
-| Mlondolozi Shezi <img width="137" height="183" alt="image" src="https://github.com/user-attachments/assets/078194d8-e2ee-439a-9cf7-1f7163ebfee1" /> | ST10458040 | Backend Lead / Mobile Support | Database structure, backend functionality, data protection, API development | 
-
-| Sphumelele Khuzwayo <img width="164" height="219" alt="image" src="https://github.com/user-attachments/assets/66fb469a-6d67-4bb3-bf1c-36b137be9647" /> | ST10456229 | Database Designer / Mobile Support | User features, backend API integration, code reviews, responsive design | 
+| Sphumelele Khuzwayo| ST10456229 | Database Designer / Mobile Support | User features, backend API integration, code reviews, responsive design | 
 
 
 ### Team Allocation by Task
