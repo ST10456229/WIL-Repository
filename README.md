@@ -1,6 +1,6 @@
 ## ChowDown Café - Digital Marketing & Operations Platform
 <p align="center"> <img width="282" height="179" alt="chowd" src="https://github.com/user-attachments/assets/f6048073-162c-4aee-8848-6cb1f312fdbe" /> </p><h1 align="center">☕ ChowDown Café</h1> <h3 align="center">Digital Marketing & Operations Platform</h3><p align="center"> <a href="#"><img src="https://img.shields.io/badge/version-1.0.0-blue?style=for-the-badge" alt="Version"/></a> <a href="#"><img src="https://img.shields.io/badge/PHP-8.x-777BB4?style=for-the-badge&logo=php" alt="PHP"/></a> <a href="#"><img src="https://img.shields.io/badge/Kotlin-1.9.x-7F52FF?style=for-the-badge&logo=kotlin" alt="Kotlin"/></a> <a href="#"><img src="https://img.shields.io/badge/MySQL-8.x-4479A1?style=for-the-badge&logo=mysql" alt="MySQL"/></a> <a href="#"><img src="https://img.shields.io/badge/Firebase-Firestore-FFCA28?style=for-the-badge&logo=firebase" alt="Firebase"/></a> <a href="#"><img src="https://img.shields.io/badge/DevOps-GitHub%20Actions-2088FF?style=for-the-badge&logo=github-actions" alt="DevOps"/></a> <a href="#"><img src="https://img.shields.io/badge/Docker-Containerized-2496ED?style=for-the-badge&logo=docker" alt="Docker"/></a> </p><p align="center"> <b>🏆 Rosebank College - Work Integrated Learning (WIL) Project</b><br> <i>Team Amajongo • 2026</i> </p><hr>
-## 📋 Table of Contents
+### 📋 Table of Contents
 <details> <summary><b>📑 Click to expand</b></summary>
 📖 Project Overview
 
